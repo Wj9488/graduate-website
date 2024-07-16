@@ -1,118 +1,155 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import CommonHeader from "@/components/sitewide/CommonHeader";
+import Nav from "@/components/sitewide/Nav";
+import TopGradient from "@/components/sitewide/TopGradient";
+import PageMetadata from "@/components/sitewide/PageMetadata";
+import Canvas from "@/components/specific/Canvas";
 
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image";
+
+import { motion as a } from "framer-motion";
+
+import HomePageImage from "@/public/images/h.png";
 
 export default function Home() {
+  const textAnimation = {
+    hidden: { y: 2.5, opacity: 0, filter: "blur(15px)" },
+    visible: { y: 0, opacity: 1, filter: "blur(0px)" },
+  };
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <PageMetadata PageTitle={"Home"} />
+      <main className="overflow-x-hidden">
+        <TopGradient gradientFromLeft={"from-[#FF0F7B]"} gradientToRight={"to-[#F89B29]"}/>
+        <Nav />
+        <Canvas />
+        <a.div
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.2, duration: 0.25 }}
+          variants={textAnimation}
+        >
+          <Image
+            src={HomePageImage}
+            width={500}
+            height={"auto"}
+            placeholder="blur"
+            className="lg:hidden standard__x_padding w-[full] h-[auto]"
+          />
+        </a.div>
+        <div className="absolute bottom-8 z-[1] accent__c_white">
+          <header className="pt-[2.5rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem]">
+            <div className="header__grid standard__x_padding">
+              <div id="HeaderText" className="justify-self-start">
+                <CommonHeader
+                  headerText={
+                    "Hi, I'm Will, a first class business management graduate."
+                  }
+                />
+              </div>
+              <a.div
+                id="SmallText"
+                className="justify-self-center pt-[2.5rem] lg:pt-0"
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 0.2, duration: 0.25 }}
+                variants={textAnimation}
+              >
+                <p>Welcome</p>
+              </a.div>
+              <a.div
+                id="MediumText"
+                className="justify-self-end pt-[2.5rem] lg:pt-0"
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: 0.4, duration: 0.25 }}
+                variants={textAnimation}
+              >
+                <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+                  Currently searching for a role in a London based company.
+                </p>
+              </a.div>
+            </div>
+          </header>
         </div>
-      </div>
+        {/* 
+        <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem]">
+          <div className="flex items-start justify-between gap-[2.5rem] standard__x_padding">
+            <p className="text-4xl 2xl:text-5xl text__c_reduced_black">Intro</p>
+            <p className="text-4xl 2xl:text-5xl w-[60%]">
+              As a dual English & French passport holder and native speaker of
+              both languages, I bring strong linguistic skills to any role. My
+              First-Class Honours in Business Management from Exeter University
+              has equipped me with analytical and critical thinking skills
+              across various business disciplines.
+              <br />
+              <br />
+              Additionally, my diverse work experience, from leading Python
+              workshops to developing websites for clients, showcases my ability
+              to manage projects independently under tight deadlines and with a
+              strong focus on client satisfaction. I am proficient with modern
+              AI tools, a skill that I can utilise to contribute effectively
+              within any role. 
+            </p>
+            <p className="2xl:text-lg">S - 01</p>
+          </div>
+        </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem] accent__c_black standard__x_padding">
+          <div className="flex items-center justify-between">
+            <CommonHeader
+              extraCss={"text__c_contrast"}
+              headerText={"EDUCATION"}
+            />
+            <p className="text__c_contrast_reduced_opacity 3xl:text-lg">
+              S - 02
+            </p>
+          </div>
+          <div className="pt-[2.5rem] 2xl:pt-[3rem]">
+            <div className="flex items-start justify-between">
+              <p className="text__c_contrast text-4xl 2xl:text-5xl ">
+                Exeter University <br />
+                <span className="text__c_contrast_reduced_opacity">
+                  Business Management BSc
+                </span>
+              </p>
+              <p className="text__c_contrast text-4xl 2xl:text-5xl">
+                First Class
+              </p>
+            </div>
+            <p className="2xl:text-lg text__c_contrast pt-[1.5rem] 2xl:pt-[2rem]">
+              Highly analytical and critical degree covering all areas of modern
+              business. Achieved grades in the 90th percentile of my year group
+              in year 2.
+              <br />
+              <br />
+              Managing Entrepreneurially [81%], Strategic Digital Marketing
+              [81%], Managerial Accounting [90%], Thinking Entrepreneurially
+              [78%], Managing Change and Crisis in Organisations [76%], Consumer
+              Behaviour [76%]
+            </p>
+          </div>
+          <div className="pt-[5rem] 2xl:pt-[5.5rem]">
+            <div className="flex items-start justify-between">
+              <p className="text__c_contrast text-4xl 2xl:text-5xl ">
+                Beacon Academy <br />
+                <span className="text__c_contrast_reduced_opacity">
+                  Sixth Form
+                </span>
+              </p>
+              <p className="text__c_contrast text-4xl 2xl:text-5xl">
+                A*, A, B
+              </p>
+            </div>
+            <p className="2xl:text-lg text__c_contrast pt-[1.5rem] 2xl:pt-[2rem]">
+              French [A*], History [A], Psychology [B]
+            </p>
+          </div>
+        </section> */}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        {/* <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem] standard__x_padding">
+          <CommonHeader headerText={"WORK EXPERIENCE"}/> 
+        </section> */}
+      </main>
+    </>
   );
 }

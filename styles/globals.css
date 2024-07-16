@@ -3,31 +3,156 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --standard-text-black: #151515;
+  --standard-text-opacity-reduced-black: #15151554;
+  --standard-text-contrast: #fafafa;
+  --standard-text-contrast-reduced-opacity: #515151;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --body-background: #F7F7F7;
+
+  --colour-theme-accent-main: #000;
+
+  --padding-y-large: 5rem; 
+
+  --padding-b-medium: 2.5rem;
+  --padding-b-small: 1.25rem;
+  --padding-t-medium: 2.5rem;
+  --padding-t-small: 1.25rem;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--body-background);
+}
+.body__background {
+  background-color: var(--body-background);
+}
+main {
+  min-height: 100dvh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* HEADING GRID */
+
+.header__grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Header Header Header SmallText MediumText";
+}
+
+#HeaderText {
+  grid-area: "Header";
+}
+#SmallText {
+  grid-area: "SmallText";
+}
+#MediumText {
+  grid-area: "MediumText";
+}
+
+@media screen and (max-width: 800px) {
+  .header__grid {
+    display: block;
+  }
+}
+
+/* FONT SIZING */
+
+.text__m_body {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+/* GRADIENTS */
+
+.gt {
+  background: linear-gradient(-45deg, #FF0F7B, #F89B29);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.g__bg {
+  background: linear-gradient(-45deg, #FF0F7B, #F89B29);
+}
+
+/* COLOUR SETS TEXT */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p {
+  color: var(--standard-text-black);
+}
+
+.text__c_black {
+  color: var(--standard-text-black);
+}
+.text__c_reduced_black {
+  color: var(--standard-text-opacity-reduced-black);
+}
+.text__c_contrast {
+  color: var(--standard-text-contrast);
+}
+.text__c_contrast_reduced_opacity {
+  color: var(--standard-text-contrast-reduced-opacity);
+}
+/* COLOUR SETS HTML */
+
+.accent__c_main {
+  background-color: var(--colour-theme-accent-main);
+}
+.accent__c_black {
+  background-color: var(--standard-text-black);
+}
+.accent__c_white {
+  background-color: var(--body-background);
+}
+
+/* PADDING */
+
+.p__y_lg {
+  padding-bottom: var(--padding-y-large);
+  padding-top: var(--padding-y-large);
+}
+
+.p__b_md {
+  padding-bottom: var(--padding-b-medium);
+}
+.p__b_sm {
+  padding-bottom: var(--padding-b-small);
+}
+
+.p__t_md {
+  padding-bottom: var(--padding-t-medium);
+}
+.p__t_sm {
+  padding-bottom: var(--padding-t-small);
+}
+
+/* Standard X Padding */
+
+.standard__x_padding {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;  
+}
+
+/* BORDERS */
+
+.border__left {
+  border-left: 1px solid var(--colour-theme-accent-main);
+}
+.border__right {
+  border-right: 1px solid var(--colour-theme-accent-main);
+}
+
+/* Phone Breakpoint */
+
+@media screen and (max-width: 1000px) {
+  .standard__x_padding {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;  
   }
 }
