@@ -46,7 +46,7 @@ const Work = () => {
               />
             </div>
           </div>
-          <div className="pt-[2.5rem] lg:ml-0 ml-[40%]">
+          <div className="pt-[2.5rem] lg:ml-0">
             <ProjectShowcase
               imageSource={BirdLime}
               projectLinkText={"Thousand Lines"}
@@ -64,3 +64,5 @@ const Work = () => {
 };
 
 export default Work;
+
+

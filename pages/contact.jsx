@@ -5,7 +5,6 @@ import HeaderLayout from "@/components/sitewide/HeaderLayout";
 import GradientLetterLeft from "@/components/specific/GradientLetterLeft";
 
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
-import { useRef } from "react";
 
 import Link from "next/link"
 
@@ -28,7 +27,7 @@ const Contact = () => {
           HeaderMainTitle={"If you want to work together or just want to say hi, feel free to drop me a line."}
           HeaderMediumText={"Let's get in touch"}
           HeaderSecondarySmallText={"London, UK"}
-          HeaderMediumTextGray={"19:00"}
+          HeaderMediumTextGray={""}
         />
         <section className="pt-[2.5rem] pb-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem] lg:grid grid-cols-2 grid-rows-1 standard__x_padding">
           <a.div

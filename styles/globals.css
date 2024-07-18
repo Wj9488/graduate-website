@@ -148,6 +148,13 @@ p {
   border-right: 1px solid var(--colour-theme-accent-main);
 }
 
+.bt {
+  border-top: 1px solid var(--colour-theme-accent-main);
+}
+.bb{
+  border-bottom: 1px solid var(--colour-theme-accent-main);
+}
+
 /* Phone Breakpoint */
 
 @media screen and (max-width: 1000px) {
@@ -155,4 +162,16 @@ p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;  
   }
+}
+
+/* MISC */
+
+.hover__transition {
+  transition: all 0.3s ease-in-out;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.hover__transition:hover {
+  padding-left: 10px;
+  padding-right: 10px;
 }

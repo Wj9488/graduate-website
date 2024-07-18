@@ -41,14 +41,14 @@ const Nav = () => {
       </div>
       <div className="hidden md:flex">
         <ul className="z-10 py-2 lg:px-[0.75rem] px-[0.5rem] accent__c_white flex items-center justify-between gap-6">
-          <li className="3xl:text-lg">
+          {/* <li className="3xl:text-lg">
             <Link
               className="pc hover:opacity-50 transition-all duration-200"
               href={"/blog"}
             >
               Blog
             </Link>
-          </li>
+          </li> */}
           <li className="lg:my-[0rem] my-1 3xl:text-lg">
             <Link
               className="pc hover:opacity-50 transition-all duration-200"
@@ -65,12 +65,20 @@ const Nav = () => {
               About
             </Link>
           </li>
+          <li className="3xl:text-lg">
+            <Link
+              className="pc hover:opacity-50 transition-all duration-200"
+              href={"/readings"}
+            >
+              Readings
+            </Link>
+          </li>
           <Link
             className=""
             href={"/contact"}
           >
             <div className="flex items-center gap-2 hover:opacity-50 transition-all duration-200">
-              <li className="3xl:text-lg font-medium">Let's Connect</li>
+              <li className="3xl:text-lg font-medium">Contact Me</li>
               <div className="py-1 px-2 accent__c_main rounded-xl">
                 <svg
                   width="12"

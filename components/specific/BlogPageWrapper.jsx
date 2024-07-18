@@ -4,7 +4,7 @@ const BlogPageWrapper = ({children}) => {
   return (
     <main>
         <Nav />
-        <div className="pt-[6rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] min-h-[100dvh]">
+        <div className="py-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem] min-h-[100dvh] px-[0.5rem] lg:px-[15rem] xl:px-[20rem] 2xl:px-[25rem]">
             {children}
         </div>
     </main>
