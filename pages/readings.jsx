@@ -28,8 +28,8 @@ const Readings = () => {
       <PageMetadata PageTitle={"Books I've read"} />
       <main className="overflow-x-hidden">
         <TopGradient
-          gradientFromLeft={"from-[#9fccfa]"}
-          gradientToRight={"to-[#084eff]"}
+          gradientFromLeft={"from-[#ff0f7b]"}
+          gradientToRight={"to-[#f89b29]"}
         />
         <Nav />
         <HeaderLayout
@@ -43,7 +43,7 @@ const Readings = () => {
         <section className="py-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem] standard__x_padding lg:flex gap-[10rem]">
           <div className="lg:hidden">
             <a.div style={{ y: letterTranslate, filter: regulateBlur }}>
-              <GradientLetterLeft fromColour={"from-[#9fccfa]"} toColour={"to-[#084eff]"} LetterText={"B"} />
+              <GradientLetterLeft fromColour={"from-[#ff0f7b]"} toColour={"to-[#f89b29]"} LetterText={"B"} />
             </a.div>
           </div>
           <div className="pt-[2.5rem] lg:pt-0 w-full accent__c_white">

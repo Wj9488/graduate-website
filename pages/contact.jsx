@@ -21,7 +21,7 @@ const Contact = () => {
     <>
       <PageMetadata PageTitle={"Contact"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#e20b8c]"} gradientToRight={"to-[#f84b00]"}/>
+        <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/>
         <Nav />
         <HeaderLayout 
           HeaderMainTitle={"If you want to work together or just want to say hi, feel free to drop me a line."}
@@ -33,7 +33,7 @@ const Contact = () => {
           <a.div
             style={{ y: letterTranslate, filter: regulateBlur }}
           >
-            <GradientLetterLeft fromColour={"from-[#e20b8c]"} toColour={"to-[#f84b00]"} LetterText={"C"} />
+            <GradientLetterLeft fromColour={"from-[#ff0f7b]"} toColour={"to-[#f89b29]"} LetterText={"C"} />
           </a.div>
           {/* <p className="2xl:text-lg">Via:</p> */}
           <div className="justify-self-end">

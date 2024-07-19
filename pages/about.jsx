@@ -54,7 +54,7 @@ const About = () => {
     <>
       <PageMetadata PageTitle={"About"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#82f4b1]"} gradientToRight={"to-[#30c67c]"}/>
+        <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/>
         <Nav />
         <HeaderLayout
           HeaderMainTitle={
@@ -69,7 +69,7 @@ const About = () => {
             className="justify-self-start pt-[2.5rem] lg:pt-0"
             style={{ y: letterTranslate, filter: regulateBlur }}
           >
-            <GradientLetterLeft fromColour={"from-[#82f4b1]"} toColour={"to-[#30c67c]"} LetterText={"A"} />
+            <GradientLetterLeft fromColour={"from-[#ff0f7b]"} toColour={"to-[#f89b29]"} LetterText={"A"} />
           </a.div>
           <p className="justify-self-end pt-[2.5rem] lg:pt-0 lg:w-[80%] 2xl:w-[60%] 2xl:text-lg">
             Bilingual in French and English, I bring a diverse skill set and a
