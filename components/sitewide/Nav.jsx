@@ -9,7 +9,9 @@ const Nav = () => {
     "/work": "Work",
     "/about": "About",
     "/contact": "Contact",
-    "/blog": "Blog Index"
+    "/blog": "Blog Index",
+    "/readings": "Readings",
+    "/blog/the-most-underrated-business-asset": "Post 01"
   };
 
   const getDisplayWord = (path) => pathMap[path] || "Home";

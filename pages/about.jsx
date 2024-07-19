@@ -49,11 +49,12 @@ const About = () => {
     visible: { y: 0, opacity: 1, filter: "blur(0px)"},
   };
 
+
   return (
     <>
       <PageMetadata PageTitle={"About"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#FF0F7B]"} gradientToRight={"to-[#F89B29]"}/>
+        <TopGradient gradientFromLeft={"from-[#82f4b1]"} gradientToRight={"to-[#30c67c]"}/>
         <Nav />
         <HeaderLayout
           HeaderMainTitle={
@@ -68,7 +69,7 @@ const About = () => {
             className="justify-self-start pt-[2.5rem] lg:pt-0"
             style={{ y: letterTranslate, filter: regulateBlur }}
           >
-            <GradientLetterLeft LetterText={"A"} />
+            <GradientLetterLeft fromColour={"from-[#82f4b1]"} toColour={"to-[#30c67c]"} LetterText={"A"} />
           </a.div>
           <p className="justify-self-end pt-[2.5rem] lg:pt-0 lg:w-[80%] 2xl:w-[60%] 2xl:text-lg">
             Bilingual in French and English, I bring a diverse skill set and a

@@ -23,7 +23,7 @@ const ScrollProgress = () => {
   const offset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <div className="fixed bottom-2 left-2 lg:bottom-[0.75rem] lg:left-[0.75rem]">
+    <div className="lg:fixed hidden bottom-2 left-2 lg:bottom-[0.75rem] lg:left-[0.75rem]">
       <svg className="rotate-90" width="25" height="25">
         <circle
           className="circle-bg"

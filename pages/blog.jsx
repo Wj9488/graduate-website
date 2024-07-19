@@ -54,8 +54,8 @@ const Blog = () => {
       <PageMetadata PageTitle={"Blog"} />
       <main className="overflow-x-hidden">
         <TopGradient
-          gradientFromLeft={'from-[#FF0F7B]'}
-          gradientToRight={'to-[#F89B29]'}
+          gradientFromLeft={'from-[#070707]'}
+          gradientToRight={'to-[#b1b1b1]'}
         />
         <Nav />
         <section className="pt-[6rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] standard__x_padding">

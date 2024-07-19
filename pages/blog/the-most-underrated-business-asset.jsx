@@ -19,7 +19,7 @@ const MostUnderratedAssetPost = () => {
         gradientToRight={`to-[#aefb2a]`}
       />
       <BlogPageWrapper>
-        <BlogInfoBar postDate={"07/07/2024"} postAuthor={"William Jones"} />
+        <BlogInfoBar postDate={"7th June 2024"} postAuthor={"William Jones"} />
         <div className="pt-[1rem] lg:pt-[2.5rem]">
           <CommonHeader headerText={"The most underrated business asset"} />
         </div>

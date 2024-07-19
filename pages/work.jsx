@@ -13,7 +13,7 @@ const Work = () => {
     <>
       <PageMetadata PageTitle={"Work"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#FF0F7B]"} gradientToRight={"to-[#F89B29]"}/>
+        <TopGradient gradientFromLeft={"from-[#fbd07c]"} gradientToRight={"to-[#f7f779]"}/>
         <Nav />
         <HeaderLayout
           HeaderMainTitle={

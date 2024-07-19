@@ -52,7 +52,7 @@ const BookShowcase = ({
             <Image
               src={imageSrc}
               alt="Project Image"
-              className="shadow-2xl rounded lg:block hidden 2xl:w-[300px] xl:w-[275px] lg:w-[250px]"
+              className="shadow-2xl rounded lg:block hidden 2xl:w-[350px] xl:w-[275px] lg:w-[250px]"
               width={300}
               height={"auto"}
               quality={80}
