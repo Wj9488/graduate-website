@@ -71,8 +71,8 @@ export default function Home() {
             </div>
           </header>
         </div>
-        {/* 
-        <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem]">
+        
+        {/* <section className="pt-[120vh] 2xl:pt-[120vh] 3xl:pt-[120vh]">
           <div className="flex items-start justify-between gap-[2.5rem] standard__x_padding">
             <p className="text-4xl 2xl:text-5xl text__c_reduced_black">Intro</p>
             <p className="text-4xl 2xl:text-5xl w-[60%]">
@@ -94,11 +94,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem] accent__c_black standard__x_padding">
+        <section className="py-[10rem] 2xl:py-[15rem] 3xl:py-[17.5rem] standard__x_padding">
           <div className="flex items-center justify-between">
             <CommonHeader
-              extraCss={"text__c_contrast"}
-              headerText={"EDUCATION"}
+              extraCss={""}
+              headerText={"Education"}
             />
             <p className="text__c_contrast_reduced_opacity 3xl:text-lg">
               S - 02
@@ -106,17 +106,17 @@ export default function Home() {
           </div>
           <div className="pt-[2.5rem] 2xl:pt-[3rem]">
             <div className="flex items-start justify-between">
-              <p className="text__c_contrast text-4xl 2xl:text-5xl ">
+              <p className="text-4xl 2xl:text-5xl ">
                 Exeter University <br />
-                <span className="text__c_contrast_reduced_opacity">
+                <span className="text__c_reduced_black">
                   Business Management BSc
                 </span>
               </p>
-              <p className="text__c_contrast text-4xl 2xl:text-5xl">
+              <p className="text-4xl 2xl:text-5xl">
                 First Class
               </p>
             </div>
-            <p className="2xl:text-lg text__c_contrast pt-[1.5rem] 2xl:pt-[2rem]">
+            <p className="2xl:text-lg pt-[1.5rem] 2xl:pt-[2rem]">
               Highly analytical and critical degree covering all areas of modern
               business. Achieved grades in the 90th percentile of my year group
               in year 2.
@@ -132,15 +132,15 @@ export default function Home() {
             <div className="flex items-start justify-between">
               <p className="text__c_contrast text-4xl 2xl:text-5xl ">
                 Beacon Academy <br />
-                <span className="text__c_contrast_reduced_opacity">
+                <span className="text__c_reduced_black">
                   Sixth Form
                 </span>
               </p>
-              <p className="text__c_contrast text-4xl 2xl:text-5xl">
+              <p className=" text-4xl 2xl:text-5xl">
                 A*, A, B
               </p>
             </div>
-            <p className="2xl:text-lg text__c_contrast pt-[1.5rem] 2xl:pt-[2rem]">
+            <p className="2xl:text-lg pt-[1.5rem] 2xl:pt-[2rem]">
               French [A*], History [A], Psychology [B]
             </p>
           </div>

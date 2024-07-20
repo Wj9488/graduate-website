@@ -33,6 +33,7 @@ const Work = () => {
               projectTitle={"Strong Words"}
               extraLargeScreenWidth={"2xl:w-[1300px]"}
               largeScreenWidth={"lg:w-[900px]"}
+              liveLink={"https://strong-words.co.uk"}
             />
             <div className="pt-[2.5rem] lg:pt-0">
               <ProjectShowcase
@@ -43,10 +44,11 @@ const Work = () => {
                 projectTitle={"Excode"}
                 extraLargeScreenWidth={"2xl:w-[1000px]"}
                 largeScreenWidth={"lg:w-[600px]"}
+                liveLink={"/blog/excode-2024"}
               />
             </div>
           </div>
-          <div className="pt-[2.5rem] lg:ml-0">
+          <div className="pt-[2.5rem] lg:ml-0 w-[fit-content]">
             <ProjectShowcase
               imageSource={BirdLime}
               projectLinkText={"Thousand Lines"}
@@ -55,6 +57,7 @@ const Work = () => {
               projectTitle={"Birdlime Media"}
               extraLargeScreenWidth={"2xl:w-[1300px]"}
               largeScreenWidth={"lg:w-[900px]"}
+              liveLink={"https://birdlimemedia.co.uk"}
             />
           </div>
         </section>
