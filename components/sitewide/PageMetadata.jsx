@@ -12,7 +12,7 @@ const PageMetadata = ({ PageTitle }) => {
     <meta property="og:site_name" content="William Jones" />
     <meta property="og:description" content="Find out more about me." />
     <meta name="description" content="Find out more about me." />
-    <meta property="og:image" content="site__icon.png" />
+    <meta property="og:image" content="./site__icon.png" />
     <meta name="keywords" content="" />
   </Head>
   )

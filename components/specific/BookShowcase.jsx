@@ -36,6 +36,15 @@ const BookShowcase = ({
         <p className="text-base lg:text-3xl xl:text-4xl 2xl:text-5xl ">{bookTitle}</p>
         <p className="text-base lg:text-3xl xl:text-4xl 2xl:text-5xl text__c_reduced_black flex justify-center">{bookTopic}</p>
         <p className="text-base lg:text-3xl xl:text-4xl 2xl:text-5xl text-right">{bookAuthor}</p>
+        <Image 
+          src={imageSrc}
+          alt="Book Cover Image"
+          className="lg:hidden w-[100px] pt-[1rem]"
+          width={300}
+          loading="eager"
+          quality={80}
+          height={"auto"}
+        />
         {isHovering && (
           <a.div
             style={{
@@ -51,7 +60,7 @@ const BookShowcase = ({
           >
             <Image
               src={imageSrc}
-              alt="Project Image"
+              alt="Book Cover Image"
               className="shadow-2xl rounded lg:block hidden 2xl:w-[350px] xl:w-[275px] lg:w-[250px]"
               width={300}
               height={"auto"}
