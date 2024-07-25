@@ -4,7 +4,7 @@ const PageMetadata = ({ PageTitle }) => {
   return (
     <Head>
     <title>{PageTitle} | William Jones</title>
-    <link rel="shortcut icon" href="site__icon.png" />
+    <link rel="shortcut icon" href="icon.png" />
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:locale" content="en_GB" />
@@ -12,7 +12,7 @@ const PageMetadata = ({ PageTitle }) => {
     <meta property="og:site_name" content="William Jones" />
     <meta property="og:description" content="Find out more about me." />
     <meta name="description" content="Find out more about me." />
-    <meta property="og:image" content="./site__icon.png" />
+    <meta property="og:image" content="./icon.png" />
     <meta name="keywords" content="" />
   </Head>
   )

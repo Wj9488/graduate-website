@@ -11,7 +11,7 @@ const Nav = () => {
     "/contact": "Contact",
     "/blog": "Blog Index",
     "/readings": "Readings",
-    "/blog/the-most-underrated-business-asset": "Post 01"
+    "/blog/excode-2024": "Excode 2024"
   };
 
   const getDisplayWord = (path) => pathMap[path] || "Home";
@@ -43,14 +43,6 @@ const Nav = () => {
       </div>
       <div className="hidden md:flex">
         <ul className="z-10 py-2 lg:px-[0.75rem] px-[0.5rem] accent__c_white flex items-center justify-between gap-6">
-          {/* <li className="3xl:text-lg">
-            <Link
-              className="pc hover:opacity-50 transition-all duration-200"
-              href={"/blog"}
-            >
-              Blog
-            </Link>
-          </li> */}
           <li className="lg:my-[0rem] my-1 3xl:text-lg">
             <Link
               className="pc hover:opacity-50 transition-all duration-200"
@@ -70,9 +62,17 @@ const Nav = () => {
           <li className="3xl:text-lg">
             <Link
               className="pc hover:opacity-50 transition-all duration-200"
-              href={"/readings"}
+              href={"/reading"}
             >
-              Readings
+              Reading
+            </Link>
+          </li>
+          <li className="3xl:text-lg">
+            <Link
+              className="pc hover:opacity-50 transition-all duration-200"
+              href={"/blog"}
+            >
+              Blog
             </Link>
           </li>
           <Link

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { motion as a, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 
-import HomePageImage from "@/public/images/h.png";
+import GraduateImage from "@/public/images/graduate.png";
+
 
 const GradientBackground = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,7 +65,7 @@ const GradientBackground = () => {
           variants={imageAnimation}
         >
           <Image
-            src={HomePageImage}
+            src={GraduateImage}
             width={500}
             height={"auto"}
             placeholder="blur"

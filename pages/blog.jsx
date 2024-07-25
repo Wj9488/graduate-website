@@ -23,24 +23,10 @@ const Blog = () => {
   const blogPosts = [
     {
       postNumber: "01",
-      postTitle: "What is your number?",
-      postHref: "what-is-your-number",
-      gradientFrom: "#ff930f",
-      gradientTo: "#fff95b",
-    },
-    {
-      postNumber: "02",
-      postTitle: "Why you'll never win in crypto",
-      postHref: "why-you-will-never-win-in-crypto",
-      gradientFrom: "#45caff",
-      gradientTo: "#ff1b6b",
-    },
-    {
-      postNumber: "03",
-      postTitle: "The most underrated business asset",
-      postHref: "the-most-underrated-business-asset",
-      gradientFrom: "#57ebde",
-      gradientTo: "#aefb2a",
+      postTitle: "Teaching at Excode 2023",
+      postHref: "excode-2023",
+      gradientFrom: "#6eee87",
+      gradientTo: "#5fc52e",
     },
   ];
 

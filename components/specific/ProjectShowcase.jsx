@@ -11,6 +11,7 @@ const ProjectShowcase = ({
   largeScreenWidth,
   extraLargeScreenWidth,
   liveLink,
+  ButtonLiveLinkText
 }) => {
   return (
     <div className="standard__x_padding relative group ">
@@ -27,7 +28,7 @@ const ProjectShowcase = ({
             className="absolute top-0 flex items-center justify-center lg:hidden"
           >
               <div className="accent__c_white py-1 px-2 2xl:text-lg flex gap-1 items-center rounded-br-2xl">
-                <p>View Live</p>
+                <p>{ButtonLiveLinkText}</p>
                 <svg  
                 width="21"
                 height="20"
@@ -49,7 +50,7 @@ const ProjectShowcase = ({
             transition={{ duration: 0.5 }}
           >
               <div className="rounded-2xl accent__c_white py-2 px-4 2xl:text-lg flex gap-1 items-center">
-                <p>View Live</p>
+                <p>{ButtonLiveLinkText}</p>
                 <svg
                 width="21"
                 height="20"

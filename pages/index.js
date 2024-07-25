@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import { motion as a } from "framer-motion";
 
-import HomePageImage from "@/public/images/h.png";
+import GraduateImage from "@/public/images/graduate.png";
 
 export default function Home() {
   const textAnimation = {
@@ -29,7 +29,7 @@ export default function Home() {
           variants={textAnimation}
         >
           <Image
-            src={HomePageImage}
+            src={GraduateImage}
             width={500}
             height={"auto"}
             placeholder="blur"

@@ -31,9 +31,9 @@ const Footer = () => {
                 <li className="2xl:text-lg">
                   <Link
                     className="text__c_contrast hover:opacity-50 transition-all duration-200"
-                    href={"/readings"}
+                    href={"/reading"}
                   >
-                    Readings
+                    Reading
                   </Link>
                 </li>
                 <li className="2xl:text-lg">
@@ -52,6 +52,15 @@ const Footer = () => {
                     About
                   </Link>
                 </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    href={"/blog"}
+                  >
+                    Blog
+                  </Link>
+                </li>
+                
                 <li className="2xl:text-lg">
                   <Link
                     className="text__c_contrast hover:opacity-50 transition-all duration-200"

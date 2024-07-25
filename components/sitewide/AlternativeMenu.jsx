@@ -29,10 +29,10 @@ const menuVariants = {
 
 const menuItems = [
   { name: "Home", path: "/" },
-  // { name: "Blog", path: "/blog" },
+  { name: "Blog", path: "/blog" },
   { name: "Work", path: "/work" },
   { name: "About", path: "/about" },
-  { name: "Readings", path: "/readings" },
+  { name: "Reading", path: "/reading" },
   { name: "Contact", path: "/contact" },
 ];
 
