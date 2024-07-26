@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion as a, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 
-import GraduateImage from "@/public/images/graduate.png";
+import GraduateImage from "@/public/images/landing__img_s.png";
 
 
 const GradientBackground = () => {
