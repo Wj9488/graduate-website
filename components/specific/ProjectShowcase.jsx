@@ -11,11 +11,12 @@ const ProjectShowcase = ({
   largeScreenWidth,
   extraLargeScreenWidth,
   liveLink,
-  ButtonLiveLinkText
+  ButtonLiveLinkText,
+  target
 }) => {
   return (
     <div className="standard__x_padding relative group ">
-      <Link href={liveLink} target="_blank" className="">
+      <Link href={liveLink} target={target} className="">
         <div className="relative ">
           <Image
             src={imageSource}

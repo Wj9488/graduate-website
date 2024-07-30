@@ -35,6 +35,7 @@ const Work = () => {
               largeScreenWidth={"lg:w-[900px]"}
               liveLink={"https://strong-words.co.uk"}
               ButtonLiveLinkText={"View Live"}
+              target={"_blank"}
             />
             <div className="pt-[2.5rem] lg:pt-0">
               <ProjectShowcase
@@ -45,8 +46,9 @@ const Work = () => {
                 projectTitle={"Excode"}
                 extraLargeScreenWidth={"2xl:w-[1000px]"}
                 largeScreenWidth={"lg:w-[600px]"}
-                liveLink={"/blog/excode-2024"}
+                liveLink={"/blog/excode-2023"}
                 ButtonLiveLinkText={"More Info"}
+                target={"_self"}
               />
             </div>
           </div>
@@ -61,6 +63,7 @@ const Work = () => {
               largeScreenWidth={"lg:w-[900px]"}
               liveLink={"https://birdlimemedia.co.uk"}
               ButtonLiveLinkText={"View Live"}
+              target={"_blank"}
             />
           </div>
         </section>
