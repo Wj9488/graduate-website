@@ -69,7 +69,7 @@ const GradientBackground = () => {
             width={500}
             height={"auto"}
             placeholder="blur"
-            className="2xl:w-[500px] lg:block hidden lg:w-[300px]"
+            className="2xl:w-[500px] lg:block hidden lg:w-[300px] shadow-xl"
           />
         </a.div>
       </a.div>

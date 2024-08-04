@@ -54,15 +54,15 @@ const About = () => {
     <>
       <PageMetadata PageTitle={"About"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/>
+        <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/> 
         <Nav />
         <HeaderLayout
           HeaderMainTitle={
             "Hi, I’m Will, a recent business graduate with a passion for business and entrepreneurship."
           }
           HeaderSecondarySmallText={"2024"}
-          HeaderMediumText={"Hello, Bonjour"}
-          HeaderMediumTextGray={"Welcome"}
+          HeaderMediumText={"Nice to"}
+          HeaderMediumTextGray={"Meet you"}
         />
         <section className="pt-[2.5rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] lg:grid grid-cols-2 grid-rows-1 standard__x_padding">
           <a.div

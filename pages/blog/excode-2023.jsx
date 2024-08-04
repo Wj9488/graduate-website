@@ -46,7 +46,7 @@ const Excode2024 = () => {
               transition={{ delay: 0.25, duration: 0.15 }}
               variants={textAnimation}
             >
-              <h2 class="text-xl font-semibold mb-6">
+              <h2 class="text-xl underline font-medium mb-4">
                 My Experience at Excode
               </h2>
 
@@ -68,7 +68,7 @@ const Excode2024 = () => {
                 rate.
               </p>
 
-              <h3 class="text-xl font-semibold mb-4">
+              <h3 class="text-xl underline font-medium mb-4">
                 Teaching Approach and Achievements
               </h3>
 
@@ -81,7 +81,7 @@ const Excode2024 = () => {
                 them to apply their knowledge practically.
               </p>
 
-              <h4 class="text-xl font-semibold mb-4">Skills Gained</h4>
+              <h4 class="text-xl underline font-medium mb-4">Skills Gained</h4>
 
               <p class="mb-4">
                 My time at Excode was incredibly rewarding and contributed
