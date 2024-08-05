@@ -7,7 +7,7 @@ import GradientLetterLeft from "@/components/specific/GradientLetterLeft";
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
 
 import Image from "next/image"
-import ContactPageImage from "../public/images/contact__page_img.jpg"
+import ContactPageImage from "../public/images/contact__page_main_img.jpg"
 
 import Link from "next/link"
 
