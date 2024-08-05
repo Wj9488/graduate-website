@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <PageMetadata PageTitle={"Home"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#F7F7F7]"} gradientToRight={"to-[#F7F7F7]"}/>
+        {/* <TopGradient gradientFromLeft={"from-[#F7F7F7]"} gradientToRight={"to-[#F7F7F7]"}/> */}
         <Nav />
         <Canvas />
         <a.div

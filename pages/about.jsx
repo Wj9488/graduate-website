@@ -4,17 +4,20 @@ import TopGradient from "@/components/sitewide/TopGradient";
 import HeaderLayout from "@/components/sitewide/HeaderLayout";
 import GradientLetterLeft from "@/components/specific/GradientLetterLeft";
 
+import Image from "next/image"
+import AboutPageImage from "../public/images/about__page_image.png"
+
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const About = () => {
   const { scrollYProgress } = useScroll();
 
-  const letterTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const letterTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
   const regulateBlur = useTransform(
     scrollYProgress,
     [0, 1],
-    ["blur(10px)", "blur(40px)"]
+    ["blur(0px)", "blur(0px)"]
   );
 
   const skills = [
@@ -54,7 +57,7 @@ const About = () => {
     <>
       <PageMetadata PageTitle={"About"} />
       <main className="overflow-x-hidden">
-        <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/> 
+        {/* <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/>  */}
         <Nav />
         <HeaderLayout
           HeaderMainTitle={
@@ -65,12 +68,23 @@ const About = () => {
           HeaderMediumTextGray={"Meet you"}
         />
         <section className="pt-[2.5rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] lg:grid grid-cols-2 grid-rows-1 standard__x_padding">
-          <a.div
-            className="justify-self-start pt-[2.5rem] lg:pt-0"
-            style={{ y: letterTranslate, filter: regulateBlur }}
-          >
-            <GradientLetterLeft fromColour={"from-[#ff0f7b]"} toColour={"to-[#f89b29]"} LetterText={"A"} />
-          </a.div>
+          <div className="overflow-hidden">
+            <a.div
+              className="justify-self-start pt-[2.5rem] lg:pt-0"
+              style={{ y: letterTranslate, filter: regulateBlur }}
+            >
+              {/* <GradientLetterLeft fromColour={"from-[#5e5e5e]"} toColour={"to-[#7e7e7e]"} LetterText={"A"} /> */}
+              <Image
+                src={AboutPageImage}
+                width={"auto"}
+                alt="About Page Image"
+                height={1000}
+                loading="eager"
+                quality={100}
+                className="overflow-hidden lg:h-[400px] xl:h-[500px] w-full lg:w-auto scale-125"
+              />
+            </a.div>
+          </div>
           <p className="justify-self-end pt-[2.5rem] lg:pt-0 lg:w-[80%] 2xl:w-[60%] 2xl:text-lg">
             Bilingual in French and English, I bring a diverse skill set and a
             dynamic approach to every endeavour combining my technical skills

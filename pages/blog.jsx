@@ -39,10 +39,10 @@ const Blog = () => {
     <>
       <PageMetadata PageTitle={"Blog"} />
       <main className="overflow-x-hidden">
-        <TopGradient
+        {/* <TopGradient
           gradientFromLeft={'from-[#070707]'}
           gradientToRight={'to-[#b1b1b1]'}
-        />
+        /> */}
         <Nav />
         <section className="pt-[6rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] standard__x_padding">
           <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl  text__c_reduced_black">Posts</p>
