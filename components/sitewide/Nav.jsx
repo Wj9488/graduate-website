@@ -10,7 +10,7 @@ const Nav = () => {
     "/about": "About",
     "/contact": "Contact",
     "/blog": "Blog Index",
-    "/readings": "Readings",
+    "/reading": "Reading",
     "/blog/excode-2024": "Excode 2024"
   };
 
