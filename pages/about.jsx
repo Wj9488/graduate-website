@@ -32,6 +32,7 @@ const About = () => {
         "Word",
         "Teams",
         "Outlook",
+        "OneNote",
         "Google Forms",
         "Google Sheets",
         "Google Docs",
@@ -42,8 +43,8 @@ const About = () => {
       items: ["Claude", "OpenAi GPTs", "MidJourney", "Google Gemini"],
     },
     {
-      title: "Web Frameworks",
-      items: ["Next.js", "React", "SCSS", "Tailwind CSS"],
+      title: "General Tools",
+      items: ["Figma", "Slack", "SCSS", "Tailwind CSS"],
     },
   ];
 
@@ -63,7 +64,7 @@ const About = () => {
           HeaderMainTitle={
             "Hi, I’m Will, a recent business graduate with a passion for business and entrepreneurship."
           }
-          HeaderSecondarySmallText={"2024"}
+          HeaderSecondarySmallText={"Version - 2024"}
           HeaderMediumText={"Nice to"}
           HeaderMediumTextGray={"Meet you"}
         />
@@ -86,7 +87,7 @@ const About = () => {
             </a.div>
           </div>
           <p className="justify-self-end pt-[2.5rem] lg:pt-0 lg:w-[80%] 2xl:w-[60%] 2xl:text-lg">
-            Bilingual in French and English, I bring a diverse skill set and a
+          Bilingual in French and English, I bring a diverse skill set and a
             dynamic approach to every endeavour combining my technical skills
             and knowledge gained in my degree.
             <br />
@@ -103,11 +104,7 @@ const About = () => {
             in several coding languages, including Python and JavaScript, and
             frameworks such as Next.js, React, and TypeScript, I realised that
             while I have a strong aptitude for tech, my true calling lies in
-            roles that involve more social interaction.
-            <br />
-            <br />
-            Therefore, I’m looking for a front-facing business related role in a
-            small to medium sized business based in London.{" "}
+            roles that involve more social interaction and collaborationg between team members.
           </p>
         </section>
         <section className="pt-[2.5rem] pb-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem] standard__x_padding">
