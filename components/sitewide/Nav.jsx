@@ -11,7 +11,8 @@ const Nav = () => {
     "/contact": "Contact",
     "/blog": "Blog Index",
     "/reading": "Reading",
-    "/blog/excode-2024": "Excode 2024"
+    "/blog/excode-2024": "Excode 2024",
+    "/web-cv": "Web CV"
   };
 
   const getDisplayWord = (path) => pathMap[path] || "Home";

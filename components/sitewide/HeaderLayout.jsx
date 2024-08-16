@@ -21,7 +21,7 @@ const HeaderLayout = ({ HeaderMainTitle, HeaderSecondarySmallText, HeaderMediumT
           transition={{ delay: 0.2, duration: 0.25 }}
           variants={textAnimation}
         >
-          <p>{HeaderSecondarySmallText}</p>
+          <p className="2xl:text-lg">{HeaderSecondarySmallText}</p>
         </a.div>
         <a.div
           id="MediumText"
