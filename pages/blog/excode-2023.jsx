@@ -18,10 +18,10 @@ const Excode2024 = () => {
   return (
     <>
       <PageMetadata PageTitle={"Excode 2023"} />
-      <TopGradient
+      {/* <TopGradient
         gradientFromLeft={`from-[#6eee87]`}
         gradientToRight={`to-[#5fc52e]`}
-      />
+      /> */}
       <BlogPageWrapper>
         <BlogInfoBar
           postDate={"19th January 2024"}

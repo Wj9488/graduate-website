@@ -9,7 +9,7 @@ const Blog = () => {
   const [hoveredPost, setHoveredPost] = useState(null);
 
   const defaultStyles = {
-    color: "#15151530",
+    color: "#fefefe",
   };
 
   const hoveredStyles = hoveredPost
@@ -25,8 +25,8 @@ const Blog = () => {
       postNumber: "01",
       postTitle: "Teaching at Excode 2023",
       postHref: "excode-2023",
-      gradientFrom: "#6eee87",
-      gradientTo: "#5fc52e",
+      gradientFrom: "#6c757d",
+      gradientTo: "#212529",
     },
   ];
 

@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
+import GMTClock from "../specific/GMTClock";
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
         <div className="flex justify-between standard__x_padding pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
           <div>
             <p className="text__c_contrast_reduced_opacity text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
-              London, UK
+              London, UK 
+              <br />
+              <GMTClock />
             </p>
           </div>
           <div className="flex gap-[2.5rem] justify-between standard__x_padding">
