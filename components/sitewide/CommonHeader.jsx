@@ -23,7 +23,7 @@ const CommonHeader = ({ headerText, extraCss }) => {
   return (
     <h1
       ref={ref}
-      className={` text-[2.5rem] lg:text-[5rem] xl:text-[5rem] 2xl:text-[8rem] leading-[1] font-medium ${extraCss}`}
+      className={` text-[2.5rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[8rem] leading-[1] font-medium ${extraCss}`}
     >
       {words.map((word, index) => (
         <a.span

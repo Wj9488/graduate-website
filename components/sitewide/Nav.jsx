@@ -31,9 +31,9 @@ const Nav = () => {
         </Link>
       </div>
       <div className="hidden absolute accent__c_white py-2 lg:px-[0.75rem] px-[0.5rem] ml-[45%] md:flex items-center gap-1 z-[10]">
-        <p className="3xl:text-lg lg:block">Page - </p>
+        <p className="3xl:text-lg xl:block hidden">Page - </p>
         <a.p
-          className="text__c_reduced_black 3xl:text-lg"
+          className="text__c_reduced_black 3xl:text-lg xl:block hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const Nav = () => {
           {currentWord}
         </a.p>
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <ul className="z-10 py-2 lg:px-[0.75rem] px-[0.5rem] accent__c_white flex items-center justify-between gap-6">
           <li className="lg:my-[0rem] my-1 3xl:text-lg">
             <Link

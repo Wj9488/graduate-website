@@ -17,7 +17,7 @@ const Work = () => {
         <Nav />
         <HeaderLayout
           HeaderMainTitle={
-            "Selected Projects - From working in high ticket web design agencies to teaching in a coding bootcamp."
+            "Selected Projects - From working in high end web design agencies to teaching in a coding bootcamp."
           }
           HeaderMediumText={"2022-2024"}
           HeaderSecondarySmallText={"Projects"}

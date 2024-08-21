@@ -25,8 +25,15 @@ const Blog = () => {
       postNumber: "01",
       postTitle: "Teaching at Excode 2023",
       postHref: "excode-2023",
-      gradientFrom: "#6c757d",
-      gradientTo: "#212529",
+      gradientFrom: "#ff0f7b",
+      gradientTo: "#f89b29",
+    },
+    {
+      postNumber: "02",
+      postTitle: "A psychological bias checklist",
+      postHref: "a-psychological-bias-checklist",
+      gradientFrom: "#ff5858",
+      gradientTo: "#ffc8c8",
     },
   ];
 
