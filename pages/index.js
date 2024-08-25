@@ -42,7 +42,7 @@ export default function Home() {
               <div id="HeaderText" className="justify-self-start">
                 <CommonHeader
                   headerText={
-                    "Hi, I'm Will, a first class business management graduate."
+                    "Exeter graduate with a first class in Business Management."
                   }
                 />
               </div>
@@ -54,7 +54,7 @@ export default function Home() {
                 transition={{ delay: 0.2, duration: 0.25 }}
                 variants={textAnimation}
               >
-                <p>Welcome</p>
+                <p>Welcome - Bienvenu</p>
               </a.div>
               <a.div
                 id="MediumText"
