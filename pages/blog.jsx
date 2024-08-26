@@ -25,8 +25,8 @@ const Blog = () => {
       postNumber: "01",
       postTitle: "Teaching at Excode 2023",
       postHref: "excode-2023",
-      gradientFrom: "#ff0f7b",
-      gradientTo: "#f89b29",
+      gradientFrom: "#bebebe",
+      gradientTo: "#070707",
     },
   ];
 

@@ -11,6 +11,8 @@ import NineteenEightyFour from "@/public/images/1984.png";
 import ThirdDoor from "@/public/images/third_door.png";
 import BraveNewWorld from "@/public/images/brave_new_world.png";
 import CommonSenseInvesting from "@/public/images/common_sense_investing.png";
+import Mfm from "@/public/images/mfm.png"
+import Founders from "@/public/images/founders.png"
 
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
 
@@ -36,9 +38,9 @@ const Readings = () => {
           HeaderMainTitle={
             "Whether driving or working, I'll always tend to listen to a book or podcast."
           }
-          HeaderMediumText={"Favourite books"}
-          HeaderSecondarySmallText={"I usually stick to business and investing books, but sometimes I'll read fiction and scientific books."} 
-          HeaderMediumTextGray={"x6"}
+          HeaderMediumText={"Books & Podcasts"}
+          HeaderSecondarySmallText={"Some of the best books & podcasts I've listened to  this year."} 
+          HeaderMediumTextGray={"x8 "}
         />
         <section className="py-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem] standard__x_padding lg:flex gap-[10rem]">
           <div className="lg:hidden">
@@ -92,12 +94,30 @@ const Readings = () => {
                 // bookLink={"/readings/brave-new-world"}
               />
             </div>
-            <div className="bt bb">
+            <div className="bt">
               <BookShowcase
                 bookTitle={"Common Sense Investing"}
                 bookTopic={"Fiction"}
                 bookAuthor={"John C. Bogle"}
                 imageSrc={CommonSenseInvesting}
+                // bookLink={"/readings/brave-new-world"}
+              />
+            </div>
+            <div className="bt">
+              <BookShowcase
+                bookTitle={"My First Million"}
+                bookTopic={"Podcast"}
+                bookAuthor={"Business"}
+                imageSrc={Mfm}
+                // bookLink={"/readings/brave-new-world"}
+              />
+            </div>
+            <div className="bt bb">
+              <BookShowcase
+                bookTitle={"Founders"}
+                bookTopic={"Podcast"}
+                bookAuthor={"Business"}
+                imageSrc={Founders}
                 // bookLink={"/readings/brave-new-world"}
               />
             </div>
