@@ -39,12 +39,12 @@ const About = () => {
       ],
     },
     {
-      title: "AI Tools",
-      items: ["Claude", "OpenAi GPTs", "MidJourney", "Google Gemini"],
+      title: "Personal Skills",
+      items: ["Self Teaching", "Team Collaboration", "Fast Learner", "Problem Solver", "Multitasking", "Detail Oriented"],
     },
     {
-      title: "General Tools",
-      items: ["Figma", "Slack", "SCSS", "Tailwind CSS"],
+      title: "Marketing Tools",
+      items: ["Google Analytics", "Meta Ads Manager", "SparkToro", "Similar Web", "Mailchimp"],
     },
   ];
 

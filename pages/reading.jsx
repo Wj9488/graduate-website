@@ -97,7 +97,7 @@ const Readings = () => {
             <div className="bt">
               <BookShowcase
                 bookTitle={"Common Sense Investing"}
-                bookTopic={"Fiction"}
+                bookTopic={"Investing"}
                 bookAuthor={"John C. Bogle"}
                 imageSrc={CommonSenseInvesting}
                 // bookLink={"/readings/brave-new-world"}
