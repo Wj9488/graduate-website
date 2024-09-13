@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
-          <Marquee speed={110}>
+          <Marquee speed={175}>
             <p className="text-[8rem] lg:text-[9rem] xl:text-[12rem] 2xl:text-[15rem] 3xl:text-[18rem] text__c_contrast leading-[.85] overflow-y-hidden uppercase">
               William Jones - William Jones - William Jones -
             </p>

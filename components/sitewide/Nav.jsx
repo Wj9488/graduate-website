@@ -12,7 +12,8 @@ const Nav = () => {
     "/blog": "Blog Index",
     "/reading": "Reading",
     "/blog/excode-2023": "Excode 2023",
-    "/web-cv": "Web CV"
+    "/web-cv": "Web CV",
+    "/learning": "Learning"
   };
 
   const getDisplayWord = (path) => pathMap[path] || "Home";
@@ -24,13 +25,13 @@ const Nav = () => {
   }, [pathname]);
 
   return (
-    <nav className="flex items-center justify-between accent__c_white transition-colors duration-1000 ease-in-out z-[10]">
-      <div className="z-10 py-2 lg:px-[0.75rem] px-[0.5rem] accent__c_white">
+    <nav className="flex items-center justify-between accent__c_white transition-colors duration-1000 ease-in-out z-[10] lg:px-[1.75rem] 2xl:px-[2.25rem] px-[0.5rem]"> 
+      <div className="z-10 ">
         <Link className=" flex items-center" href={"/"}>
           <p className=" 3xl:text-lg font-medium">William Jones</p>
         </Link>
       </div>
-      <div className="hidden absolute accent__c_white py-2 lg:px-[0.75rem] px-[0.5rem] ml-[45%] md:flex items-center gap-1 z-[10]">
+      <div className="hidden absolute ml-[45%] md:flex items-center gap-1 z-[10]">
         <p className="3xl:text-lg xl:block hidden">Page - </p>
         <a.p
           className="text__c_reduced_black 3xl:text-lg xl:block hidden"
@@ -43,7 +44,7 @@ const Nav = () => {
         </a.p>
       </div>
       <div className="hidden lg:flex">
-        <ul className="z-10 py-2 lg:px-[0.75rem] px-[0.5rem] accent__c_white flex items-center justify-between gap-6">
+        <ul className="z-10 py-2 flex items-center justify-between gap-6">
           <li className="lg:my-[0rem] my-1 3xl:text-lg">
             <Link
               className="pc hover:opacity-50 transition-all duration-200"
@@ -80,22 +81,8 @@ const Nav = () => {
             className=""
             href={"/contact"}
           >
-            <div className="flex items-center gap-2 hover:opacity-50 transition-all duration-200">
-              <li className="3xl:text-lg font-medium">Contact Me</li>
-              <div className="py-1 px-2 accent__c_main rounded-xl">
-                <svg
-                  width="12"
-                  height="10"
-                  viewBox="0 0 12 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.06463 10L6.24432 9.19034L9.62145 5.81321H0.875V4.64133H9.62145L6.24432 1.27486L7.06463 0.454546L11.8374 5.22727L7.06463 10Z"
-                    fill="#FAFAFA"
-                  />
-                </svg>
-              </div>
+            <div className="hover:opacity-50 transition-all duration-200">
+              <li className="3xl:text-lg font-medium underline">Contact Me</li>
             </div>
           </Link>
         </ul>

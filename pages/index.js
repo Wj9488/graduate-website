@@ -21,23 +21,24 @@ export default function Home() {
       <main className="overflow-x-hidden">
         {/* <TopGradient gradientFromLeft={"from-[#F7F7F7]"} gradientToRight={"to-[#F7F7F7]"}/> */}
         <Nav />
-        <Canvas />
+        {/* <Canvas /> */}
         <a.div
           initial="hidden"
           animate="visible"
           transition={{ delay: 0.2, duration: 0.25 }}
           variants={textAnimation}
+          className=""
         >
           <Image
             src={GraduateImage}
             width={500}
             height={"auto"}
             placeholder="blur"
-            className="lg:hidden standard__x_padding w-[full] h-[auto]"
+            className="standard__x_padding w-[full] h-[auto] lg:hidden"
           />
         </a.div>
         <div className="absolute bottom-8 z-[1] accent__c_white">
-          <header className="pt-[2.5rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem]">
+          <header className="pt-[2.5rem]">
             <div className="header__grid standard__x_padding">
               <div id="HeaderText" className="justify-self-start">
                 <CommonHeader
