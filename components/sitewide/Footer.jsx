@@ -8,10 +8,10 @@ const Footer = () => {
       className="relative h-[40vh] lg:h-[60vh] z-[99]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[40vh] lg:h-[60vh] w-full accent__c_black">
+      <div className="fixed bottom-0 h-[40vh] lg:h-[60vh] w-full bg-[#2a2a2a]">
         <div className="flex justify-between standard__x_padding pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
           <div>
-            <p className="text__c_contrast_reduced_opacity text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+            <p className="text__c_contrast_reduced_opacity_drk text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
               London, UK 
               <br />
               <GMTClock />
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-[2.5rem] justify-between standard__x_padding">
           <div>
-              <p className="text__c_contrast_reduced_opacity 2xl:text-lg">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg">
                 Pages
               </p>
               <ul className="">
@@ -75,7 +75,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="text__c_contrast_reduced_opacity 2xl:text-lg">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg">
                 Socials
               </p>
               <ul className="">

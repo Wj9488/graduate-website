@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --standard-text-black: #151515;
+  --standard-text-black: #2a2a2a;
   --standard-text-opacity-reduced-black: #15151554;
   --standard-text-contrast: #fafafa;
   --standard-text-contrast-reduced-opacity: #515151;
+  --standard-text-contrast-reduced-opacity-drk: #808080;
 
-  --body-background: #F7F7F7;
+  --body-background: #f5f3f4;
 
-  --colour-theme-accent-main: #000;
+  --colour-theme-accent-main: #2a2a2a;
 
   --padding-y-large: 5rem; 
 
@@ -105,6 +106,9 @@ p {
 .text__c_contrast_reduced_opacity {
   color: var(--standard-text-contrast-reduced-opacity);
 }
+.text__c_contrast_reduced_opacity_drk {
+  color: var(--standard-text-contrast-reduced-opacity-drk);
+}
 /* COLOUR SETS HTML */
 
 .accent__c_main {
@@ -163,14 +167,14 @@ p {
 
 /* Phone Breakpoint */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .standard__x_padding {
     padding-left: 0.5rem;
     padding-right: 0.5rem;  
   }
 }
 /* lg */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .standard__x_padding {
     padding-left: 1.75rem;
     padding-right: 1.75rem;

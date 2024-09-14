@@ -28,7 +28,7 @@ const Nav = () => {
     <nav className="flex items-center justify-between accent__c_white transition-colors duration-1000 ease-in-out z-[10] lg:px-[1.75rem] 2xl:px-[2.25rem] px-[0.5rem]"> 
       <div className="z-10 ">
         <Link className=" flex items-center" href={"/"}>
-          <p className=" 3xl:text-lg font-medium">William Jones</p>
+          <p className="py-2 3xl:text-lg font-medium">William Jones</p>
         </Link>
       </div>
       <div className="hidden absolute ml-[45%] md:flex items-center gap-1 z-[10]">
