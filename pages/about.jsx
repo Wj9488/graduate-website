@@ -5,7 +5,7 @@ import HeaderLayout from "@/components/sitewide/HeaderLayout";
 import GradientLetterLeft from "@/components/specific/GradientLetterLeft";
 
 import Image from "next/image"
-import AboutPageImage from "../public/images/about__page_image.png"
+import AboutPageImage from "../public/images/landing__img_s.png"
 
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";

@@ -45,9 +45,9 @@ const Nav = () => {
       </div>
       <div className="hidden lg:flex">
         <ul className="z-10 py-2 flex items-center justify-between gap-6">
-          <li className="lg:my-[0rem] my-1 3xl:text-lg">
+          <li className="lg:my-[0rem] my-1 3xl:text-lg">  
             <Link
-              className="pc hover:opacity-50 transition-all duration-200"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
               href={"/work"}
             >
               Work
@@ -55,7 +55,7 @@ const Nav = () => {
           </li>
           <li className="3xl:text-lg">
             <Link
-              className="pc hover:opacity-50 transition-all duration-200"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
               href={"/about"}
             >
               About
@@ -63,7 +63,7 @@ const Nav = () => {
           </li>
           <li className="3xl:text-lg">
             <Link
-              className="pc hover:opacity-50 transition-all duration-200"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
               href={"/reading"}
             >
               Reading
@@ -71,7 +71,7 @@ const Nav = () => {
           </li>
           <li className="3xl:text-lg">
             <Link
-              className="pc hover:opacity-50 transition-all duration-200"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
               href={"/blog"}
             >
               Blog
@@ -81,7 +81,7 @@ const Nav = () => {
             className=""
             href={"/contact"}
           >
-            <div className="hover:opacity-50 transition-all duration-200">
+            <div className="hover:opacity-75 transition-all duration-200">
               <li className="3xl:text-lg font-medium underline">Contact Me</li>
             </div>
           </Link>

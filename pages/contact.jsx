@@ -54,12 +54,12 @@ const Contact = () => {
           <div className="justify-self-end lg:mt-0 mt-[2.5rem]">
             <p className=" text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl ">Email
               <br />
-              <Link href={"mailto:wtjones10@gmail.com"} className="text__c_reduced_black underline">wtjones10@gmail.com</Link>              
+              <Link href={"mailto:wtjones10@gmail.com"} className="text__c_reduced_black underline hover:opacity-50 transition-all duration-200">wtjones10@gmail.com</Link>              
             </p>
             
             <p className="pt-[2.5rem] text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">LinkedIn
               <br />
-              <Link href={"https://linkedin.com/in/william-thibaut-jones"} className="text__c_reduced_black underline" target="_blank">linkedin.com/in/william-thibaut-jones</Link>              
+              <Link href={"https://linkedin.com/in/william-thibaut-jones"} className="text__c_reduced_black underline hover:opacity-50 transition-all duration-200" target="_blank">linkedin.com/in/william-thibaut-jones</Link>              
             </p>
           </div>
         </section>

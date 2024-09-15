@@ -25,7 +25,7 @@ const Footer = () => {
               <ul className="">
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/"}
                   >
                     Home
@@ -33,7 +33,7 @@ const Footer = () => {
                 </li>
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/reading"}
                   >
                     Reading
@@ -41,7 +41,7 @@ const Footer = () => {
                 </li>
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/work"}
                   >
                     Work
@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/about"}
                   >
                     About
@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/blog"}
                   >
                     Blog
@@ -66,7 +66,7 @@ const Footer = () => {
                 
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     href={"/contact"}
                   >
                     Contact
@@ -81,7 +81,7 @@ const Footer = () => {
               <ul className="">
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     target="_blank"
                     href={"https://linkedin.com/in/william-thibaut-jones"}
                   >
@@ -90,7 +90,7 @@ const Footer = () => {
                 </li>
                 <li className="2xl:text-lg">
                   <Link
-                    className="text__c_contrast hover:opacity-50 transition-all duration-200"
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
                     target="_blank"
                     href={"https://github.com/Wj9488"}
                   >
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
-          <Marquee speed={175}>
+          <Marquee speed={200}>
             <p className="text-[8rem] lg:text-[9rem] xl:text-[12rem] 2xl:text-[15rem] 3xl:text-[18rem] text__c_contrast leading-[.85] overflow-y-hidden uppercase">
               William Jones - William Jones - William Jones -
             </p>

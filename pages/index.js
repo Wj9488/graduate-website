@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import { motion as a } from "framer-motion";
 
-import GraduateImage from "@/public/images/landing__img_s.png";
+import GraduateImage from "@/public/images/h__img_new.jpg";
 
 export default function Home() {
   const textAnimation = {
@@ -27,14 +27,14 @@ export default function Home() {
           animate="visible"
           transition={{ delay: 0.2, duration: 0.25 }}
           variants={textAnimation}
-          className=""
+          className="block lg:flex lg:items-center lg:justify-center overflow-hidden lg:min-h-[60vh] lg:my-[2.5rem]"
         >
           <Image
             src={GraduateImage}
             width={500}
             height={"auto"}
             placeholder="blur"
-            className="standard__x_padding w-[full] h-[auto] lg:hidden"
+            className="standard__x_padding w-[full] h-[auto] lg:scale-[1.65]"
           />
         </a.div>
         <div className="absolute bottom-8 z-[1] accent__c_white">

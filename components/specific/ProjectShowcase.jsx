@@ -76,7 +76,7 @@ const ProjectShowcase = ({
       <p className="2xl:text-lg pt-[1rem] lg:pt-[2.5rem]">
         In collaboration with:{" "}
         <Link
-          className="text__c_black underline"
+          className="text__c_black underline hover:opacity-75 transition-all duration-200"
           href={projectLink}
           target="_blank"
         >
