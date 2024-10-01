@@ -26,7 +26,7 @@ const CharlieMungerPost = () => {
           "I chose to write this post both for my own benefit and hopefully for the benefit of others. I wanted a complete and easily accessible list of the most common psychological failings in human beings. Thankfully Charlie Munger compiled a thorough list. Enjoy."
         }
       >
-        <h2 className="text-xl underline font-medium mb-4">
+        <h2 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           1. Reward and punishment superresponse tendency
         </h2>
 
@@ -35,7 +35,7 @@ const CharlieMungerPost = () => {
           with rewards or punishments, sometimes irrationally.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “Incentives are superpowers.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -50,7 +50,7 @@ const CharlieMungerPost = () => {
           proper and carefully thought out incentive structures in business to achieve desired outcomes and how drastically 
           wrong things can go if incentives aren't aligned properly.  
           </p>
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “Dread, and avoid as much you can, rewarding people for what can be easily faked.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -62,7 +62,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h3 className="text-xl underline font-medium mb-4">
+        <h3 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           2. Liking/Loving tendency
         </h3>
 
@@ -73,7 +73,7 @@ const CharlieMungerPost = () => {
           of situations, things, or people.
         </p>
 
-        <h4 className="text-xl underline font-medium mb-4">
+        <h4 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           3. Disliking/Hating tendency
         </h4>
 
@@ -83,7 +83,7 @@ const CharlieMungerPost = () => {
           causes people to completely ignore positive qualities.
         </p>
 
-        <h5 className="text-xl underline font-medium mb-4">
+        <h5 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           4. Doubt-avoidance tendency
         </h5>
 
@@ -94,7 +94,7 @@ const CharlieMungerPost = () => {
           uncertainty.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           5. Inconsistency-avoidance tendency
         </h6>
 
@@ -103,7 +103,7 @@ const CharlieMungerPost = () => {
           a decision or viewpoint people tend to stick with it, even in the face
           of true contradictory evidence.
         </p>
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “Proper education is one long exercise in the augmentation of high cognition so that our wisdom becomes strong enough to destroy wrong thinking maintained by resistance to change.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -115,7 +115,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           6. Curiosity tendency
         </h6>
 
@@ -126,7 +126,7 @@ const CharlieMungerPost = () => {
           information.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           7. Kantian fairness tendency
         </h6>
 
@@ -138,7 +138,7 @@ const CharlieMungerPost = () => {
           lead to inefficient or suboptimal decisions.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           8. Envy/jealousy tendency
         </h6>
 
@@ -147,7 +147,7 @@ const CharlieMungerPost = () => {
           by the desire to possess what others have or to undermine other's
           success.
         </p>
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “It is not greed that drives the world but envy.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -161,7 +161,7 @@ const CharlieMungerPost = () => {
           <div className="font-mono text-xs lg:text-sm border w-[fit-content] border-black py-[1px] px-2 rounded mt-2">WARREN BUFFET</div>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           9. Reciprocation tendency
         </h6>
 
@@ -175,7 +175,7 @@ const CharlieMungerPost = () => {
           with more money for the car.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           10. Influence-from-mere-association tendency
         </h6>
 
@@ -187,7 +187,7 @@ const CharlieMungerPost = () => {
           natural skill for gambling to their great misfortune.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
         “Even association that appears to be trivial, if carefully planned, can have extreme and peculiar effects on purchasers of products.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -199,7 +199,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           11. Simple, pain-avoiding psychological denial
         </h6>
 
@@ -209,7 +209,7 @@ const CharlieMungerPost = () => {
           discomfort.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           12. Excessive self regard tendency
         </h6>
 
@@ -219,7 +219,7 @@ const CharlieMungerPost = () => {
           as biased hiring.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
         “Some of the worst consequences in modern life come when dysfunctional groups of cliquish persons, dominated by excessive self-regard tendency, select as new members of their organizations persons who are very much like themselves.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -231,7 +231,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           13. Overoptimism tendency
         </h6>
 
@@ -243,7 +243,7 @@ const CharlieMungerPost = () => {
           average" when this cannot possibly be true in reality.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           14. Deprival-superreaction tendency
         </h6>
 
@@ -252,7 +252,7 @@ const CharlieMungerPost = () => {
           leading them to irrationally avoid loss even when the risk is minor.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
         “The quantity of man’s pleasure from a $10 gain does not exactly match the quantity of his displeasure from a $10 loss.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -264,7 +264,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           15. Social-proof tendency
         </h6>
 
@@ -274,7 +274,7 @@ const CharlieMungerPost = () => {
           crowd is wrong.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
         “Learn how to ignore the examples from others when they are wrong, because few skills are more worth having.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -287,7 +287,7 @@ const CharlieMungerPost = () => {
         </p>
 
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           16. Contrast-misreaction tendency
         </h6>
 
@@ -296,7 +296,7 @@ const CharlieMungerPost = () => {
           evaluating them on their own merits. People may accept unfavourable
           outcomes if they are presented alongside something worse.
         </p>
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           "When a man’s steps are consecutively taken toward disaster, with each
           step being very small, the brain’s contrast-misreaction tendency will
           often let the man go too far toward disaster to be able to avoid it"{" "}
@@ -310,7 +310,7 @@ const CharlieMungerPost = () => {
           </sup>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           17. Stress-influence tendency
         </h6>
 
@@ -319,7 +319,7 @@ const CharlieMungerPost = () => {
           decline and they become more reactive.
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           18. Availability-misweighing tendency
         </h6>
 
@@ -328,7 +328,7 @@ const CharlieMungerPost = () => {
           facts or data that are harder to recall or access.
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “An idea or a fact is not worth more merely because it is easily available to you.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -341,7 +341,7 @@ const CharlieMungerPost = () => {
         </p>
 
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           19. Use-it-or-lose-it tendency
         </h6>
 
@@ -350,7 +350,7 @@ const CharlieMungerPost = () => {
           or ability over time. 
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           20. Drug-misinfluence tendency
         </h6>
 
@@ -359,7 +359,7 @@ const CharlieMungerPost = () => {
           sober, usually making worse decisions than if they were. 
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           21. Senescence-misinfluence tendency
         </h6>
 
@@ -368,7 +368,7 @@ const CharlieMungerPost = () => {
           mental faculties change. 
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           22. Authority-misinfluence tendency
         </h6>
 
@@ -378,7 +378,7 @@ const CharlieMungerPost = () => {
           gave lethal shocks to other study participants because they were told to. 
         </p>
 
-        <p className="text-3xl lg:text-4xl times mb-8">
+        <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">
           “Ordinary people, simply doing their jobs, and without any particular hostility on their part, can become agents in a terrible destructive process.”{" "}
           <sup className="text-orange-500">
             <Link
@@ -392,7 +392,7 @@ const CharlieMungerPost = () => {
           <div className="font-mono text-xs lg:text-sm border w-[fit-content] border-black py-[1px] px-2 rounded mt-2">STANLEY MILGRAM</div>
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           23. Twaddle tendency
         </h6>
 
@@ -401,7 +401,7 @@ const CharlieMungerPost = () => {
           unimportant things. 
         </p>
 
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           24. Reason-respecting tendency
         </h6>
 
@@ -409,7 +409,7 @@ const CharlieMungerPost = () => {
           Humans have a tendency to follow reasons, even when those reasons aren't valid. If someone gives
           rationale, people are more likely to comply, even if the rationale is flawed. 
         </p>
-        <h6 className="text-xl underline font-medium mb-4">
+        <h6 className="lg:text-lg xl:text-xl underline font-medium mb-4">
           25. Lollapalooza tendency—the tendency to get extreme consequences
           from confluences of psychological tendencies acting in favor of a
           particular outcome

@@ -44,7 +44,7 @@ export default function Home() {
         />
 
         <a.header
-          className="absolute top-0 left-0 min-h-[100dvh] bg-gif min-w-full z-[-10]"
+          className="absolute top-0 left-0 min-h-[80vh] lg:min-h-[100dvh] bg-gif min-w-full z-[-10]"
           style={{ y: sectionTranslate }}
         >
           <div className="relative top-0 left-0 min-h-[100dvh] w-full bg-black opacity-20"></div>

@@ -26,7 +26,7 @@ const Excode2023Post = () => {
           "I really jumped in the deep end with this experience. I'd never taught a className before, let alone taught anyone Python. I'm glad to say that 100% of my class passed the final assessment. Here's what I learned:"
         }
       >
-            <h2 className="text-xl underline font-medium mb-4">
+            <h2 className="lg:text-lg xl:text-xl underline font-medium mb-4">
                 My Experience at Excode
               </h2>
 
@@ -48,7 +48,7 @@ const Excode2023Post = () => {
                 rate.
               </p>
 
-              <h3 className="text-xl underline font-medium mb-4">
+              <h3 className="lg:text-lg xl:text-xl underline font-medium mb-4">
                 Teaching Approach and Achievements
               </h3>
 
@@ -61,7 +61,7 @@ const Excode2023Post = () => {
                 them to apply their knowledge practically.
               </p>
 
-              <h4 className="text-xl underline font-medium mb-4">Skills Gained</h4>
+              <h4 className="lg:text-lg xl:text-xl underline font-medium mb-4">Skills Gained</h4>
 
               <p className="mb-4">
                 My time at Excode was incredibly rewarding and contributed
