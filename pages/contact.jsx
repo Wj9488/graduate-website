@@ -224,6 +224,7 @@ const Contact = () => {
           className="w-full border-transparent placeholder-[#76767654] py-1 accent__c_white border border-b-black focus:outline-none focus:border-b-black focus:border-b-2 text-[1.35rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[1.75rem] leading-[1.1]"
           required
           aria-required="true"
+          style={{ WebkitAppearance: "none", MozAppearance: "none" }}
         >
           <option value="">Please select a reason</option>
           <option value="employment">I'd like to talk about employment</option>

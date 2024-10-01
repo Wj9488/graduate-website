@@ -7,7 +7,7 @@
   --standard-text-opacity-reduced-black: #15151554;
   --standard-text-contrast: #fafafa;
   --standard-text-contrast-reduced-opacity: #515151;
-  --standard-text-contrast-reduced-opacity-drk: #6c6c6c;
+  --standard-text-contrast-reduced-opacity-drk: #656565;
 
   --body-background: #f5f3f4;
 
@@ -68,7 +68,6 @@ input {
     grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "Name Name Name Grade Year";
-    gap: var(--padding-small);
   }
 }
 
@@ -229,7 +228,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .module__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -386,95 +385,3 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-/* Hover animation 
-.hover__link {
-  position: relative;
-  width: min-content;
-}
-
-.hover__link:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1.25px;
-  width: 0;
-  border-radius: 40px;
-  transition: width 0s ease, background 0.5s ease;
-}
-.hover__link:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 1.25px;
-  width: 0;
-  border-radius: 40px;
-  transition: width 0.5s ease;
-  background-color: var(--colour-theme-accent-main);
-  mix-blend-mode: difference;
-}
-.hover__link:hover:before {
-  width: 100%;
-  background-color: var(--colour-theme-accent-main);
-  mix-blend-mode: difference;
-  border-radius: 40px;
-  transition: width 0.5s ease;
-}
-.hover__link:hover:after {
-  width: 100%;
-  background: transparent;
-  border-radius: 40px;
-  transition: all 0s ease;
-}
-
-*/
-  
-/* Hover animation END */
-/* Hover animation */
-/* .hover__link_b {
-  position: relative;
-  width: min-content;
-}
-
-.hover__link_b:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1.25px;
-  width: 0;
-  border-radius: 40px;
-  transition: width 0s ease, background 0.5s ease;
-}
-.hover__link_b:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 1.25px;
-  width: 0;
-  border-radius: 40px;
-  transition: width 0.5s ease;
-  background-color: var(--body-background);
-  mix-blend-mode: difference;
-}
-.hover__link_b:hover:before {
-  width: 100%;
-  background-color: var(--body-background);
-  mix-blend-mode: difference;
-  border-radius: 40px;
-  transition: width 0.5s ease;
-}
-.hover__link_b:hover:after {
-  width: 100%;
-  background: transparent;
-  border-radius: 40px;
-  transition: all 0s ease;
-} */
-/* Hover animation END */

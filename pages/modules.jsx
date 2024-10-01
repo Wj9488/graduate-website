@@ -134,7 +134,7 @@ const Modules = () => {
             </button>
             <button
               onClick={sortByGrade}
-              className="flex gap-1 items-center text-xs lg:text-sm"
+              className="flex gap-1 items-center text-xs lg:text-sm ml-[1.25rem] lg:mr-0"
             >
               Grade
               <svg
@@ -154,7 +154,7 @@ const Modules = () => {
             </button>
             <button
               onClick={sortByYear}
-              className="flex gap-1 items-center text-xs lg:text-sm"
+              className="flex gap-1 items-center text-xs lg:text-sm ml-[1.25rem] lg:mr-0"
             >
               Year
               <svg
@@ -195,10 +195,10 @@ const Modules = () => {
                 <p className="2xl:text-lg lg:text-base text-sm">
                   {course.name}
                 </p>
-                <p className="2xl:text-lg lg:text-base text-sm">
+                <p className="2xl:text-lg lg:text-base text-sm ml-[1.25rem] lg:mr-0">
                   {course.grade}
                 </p>
-                <p className="2xl:text-lg lg:text-base text-sm">
+                <p className="2xl:text-lg lg:text-base text-sm ml-[1.25rem] lg:mr-0">
                   {course.year} <span className="lg:hidden">yr</span>
                   <span className="text-[1px] lg:text-base 2xl:text-lg opacity-0 lg:opacity-100">Year</span>
                 </p>

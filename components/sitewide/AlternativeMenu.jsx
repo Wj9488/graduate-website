@@ -64,7 +64,7 @@ const AlternativeMenu = () => {
   return (
     <>
       <a.button
-        className="hover:cursor-pointer lg:hidden fixed top-1 right-2 rounded-lg flex items-center justify-center z-[90] shadow-lg"
+        className="hover:cursor-pointer lg:hidden fixed top-1 right-2 rounded-lg flex items-center justify-center z-[999]"
         onClick={toggleMenu}
         id="MobileOnly"
         initial="initial"
@@ -120,7 +120,7 @@ const AlternativeMenu = () => {
       <AnimatePresence>
         {isVisible && (
           <a.button
-            className="hover:cursor-pointer hidden lg:block fixed top-5 right-[0.75rem] rounded-lg z-[90] shadow-lg"
+            className="hover:cursor-pointer hidden lg:block fixed top-5 right-[0.75rem] rounded-lg z-[999] shadow-lg"
             initial="initial"
             animate="visible"
             exit="initial"
@@ -178,7 +178,7 @@ const AlternativeMenu = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <a.div
-            className="fixed top-0 flex flex-col justify-center right-0 bottom__left_radius xl:rounded-none h-full accent__c_black shadow-2xl z-[80]"
+            className="fixed top-0 flex flex-col justify-center right-0 bottom__left_radius xl:rounded-none h-full accent__c_black shadow-2xl z-[500]"
             variants={menuVariants}
             initial="closed"
             animate="open"
