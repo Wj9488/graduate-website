@@ -3,7 +3,6 @@ import HeaderLayout from "@/components/sitewide/HeaderLayout";
 import Nav from "@/components/sitewide/Nav";
 import TopGradient from "@/components/sitewide/TopGradient";
 import BookShowcase from "@/components/specific/BookShowcase";
-import GradientLetterLeft from "@/components/specific/GradientLetterLeft";
 
 import PoorCharlie from "@/public/images/poor_charles.png";
 import NeverEnough from "@/public/images/never_enough.png";
@@ -16,7 +15,7 @@ import Founders from "@/public/images/founders.png"
 
 import { motion as a, useScroll, useTransform, useInView } from "framer-motion";
 
-const Readings = () => {
+const Modules = () => {
   const { scrollYProgress } = useScroll();
 
   const letterTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
@@ -33,7 +32,7 @@ const Readings = () => {
           gradientFromLeft={"from-[#ff0f7b]"}
           gradientToRight={"to-[#f89b29]"}
         /> */}
-        <Nav />
+        <Nav NavPageIdentifierColour={"text__c_reduced_black"} />
         <HeaderLayout
           HeaderMainTitle={
             "Whether driving or working, I'll always tend to listen to a book or podcast."
@@ -128,4 +127,4 @@ const Readings = () => {
   );
 };
 
-export default Readings;
+export default Modules;

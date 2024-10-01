@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import localFont from "next/font/local";
 import AlternativeMenu from "@/components/sitewide/AlternativeMenu";
 import ScrollProgress from "@/components/sitewide/ScrollProgress";
-import Footer from "@/components/sitewide/Footer";
 import { useEffect } from "react";
 import Lenis from "lenis";
 
@@ -34,7 +33,6 @@ export default function App({ Component, pageProps }) {
       <AlternativeMenu />
       <Component {...pageProps} />
       <ScrollProgress />
-      <Footer />
     </div>
   );
 }

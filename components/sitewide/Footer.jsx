@@ -1,15 +1,219 @@
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
 import GMTClock from "../specific/GMTClock";
+import VariableSizeHeading from "./VariableSizeHeading";
 
 const Footer = () => {
   return (
     <footer
-      className="relative h-[40vh] lg:h-[60vh] z-[99]"
+      className="relative h-[100dvh] z-[99]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[40vh] lg:h-[60vh] w-full bg-[#2a2a2a]">
-        <div className="flex justify-between standard__x_padding pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
+      <div className="fixed bottom-0 h-[100dvh] w-full bg-[#121420] standard__x_padding">
+        <div className="ps-t">
+          <p className="font-medium text-2xl lg:text-3xl text__c_contrast">
+            William Jones
+          </p>
+          <p className="text__c_contrast_reduced_opacity_drk text-lg">
+            London, <GMTClock />
+          </p>
+        </div>
+
+        <div className="flex items-center justify-between lg:min-h-[83dvh] xl:min-h-[84dvh] 2xl:min-h-[85dvh] min-h-[82dvh]">
+          <div className="lg:flex items-start justify-between w-full">
+            <div className="">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg pxs-b">
+                Key Pages
+              </p>
+              <ul className="">
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/"}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/about"}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/work"}
+                  >
+                    Work
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/blog"}
+                  >
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="lg:pt-0 ps-t">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg pxs-b">
+                University
+              </p>
+              <ul className="">
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/modules"}
+                  >
+                    Modules
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/blog/excode-2023"}
+                  >
+                    Excode 2023
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link flex items-center gap-1"
+                    href={"https://exeter.ac.uk"}
+                    target="_blank"
+                  >
+                    Exeter University
+                    <svg
+                      width="19"
+                      height="19"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="lg:pt-0 ps-t">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg pxs-b">
+                Contact Me
+              </p>
+              <ul className="">
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link"
+                    href={"/contact"}
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-50 transition-all duration-200 hover__link flex items-center gap-1"
+                    href={
+                      "mailto:wtjones10@gmail.com?subject=Let's%20get%20in%20touch"
+                    }
+                    target="_blank"
+                  >
+                    Email Me
+                    <svg
+                      width="19"
+                      height="19"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="lg:pt-0 ps-t">
+              <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg pxs-b">
+                My Socials
+              </p>
+              <ul className="">
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link flex items-center gap-1"
+                    target="_blank"
+                    href={"https://linkedin.com/in/william-thibaut-jones"}
+                  >
+                    LinkedIn
+                    <svg
+                      width="19"
+                      height="19"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </Link>
+                </li>
+                <li className="2xl:text-lg">
+                  <Link
+                    className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link flex items-center gap-1"
+                    target="_blank"
+                    href={"https://github.com/Wj9488"}
+                  >
+                    Github
+                    <svg
+                      width="19"
+                      height="19"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="ps-b">
+          <p className="text__c_contrast 2xl:text-lg">
+            Made by combining some effort, skill and time. 
+            <br />
+            <span className="text__c_contrast_reduced_opacity_drk">
+              {" "}&copy; William
+              Jones 2024
+            </span>
+          </p>
+        </div>
+
+        {/* <div className="flex justify-between standard__x_padding pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
           <div>
             <p className="text__c_contrast_reduced_opacity_drk text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
               London, UK 
@@ -34,9 +238,9 @@ const Footer = () => {
                 <li className="2xl:text-lg">
                   <Link
                     className="text__c_contrast hover:opacity-75 transition-all duration-200 hover__link"
-                    href={"/reading"}
+                    href={"/modules"}
                   >
-                    Reading
+                    Modules
                   </Link>
                 </li>
                 <li className="2xl:text-lg">
@@ -100,15 +304,18 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
+        </div> */}
+        {/* <div className="standard__x_padding ps-t">
+          <VariableSizeHeading text={"William"} fontSize={"text-[60vw] lg:text-[30vw] lg:pt-[2.5rem] xl:pt-0 text__c_contrast"}/>
+        </div> */}
+        {/* <div className="pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[6rem] 3xl:pt-[10rem]">
           <Marquee speed={200}>
-            <p className="text-[8rem] lg:text-[9rem] xl:text-[12rem] 2xl:text-[15rem] 3xl:text-[18rem] text__c_contrast leading-[.85] overflow-y-hidden uppercase">
+            <p className="text-[8rem] lg:text-[9rem] xl:text-[12rem] 2xl:text-[15rem] 3xl:text-[18rem] text__c_contrast leading-[.85] overflow-y-hidden">
               William Jones - William Jones - William Jones -
             </p>
             <span className="opacity-0">___</span>
           </Marquee>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

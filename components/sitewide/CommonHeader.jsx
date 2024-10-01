@@ -23,7 +23,7 @@ const CommonHeader = ({ headerText, extraCss }) => {
   return (
     <h1
       ref={ref}
-      className={` text-[2.5rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[8rem] leading-[1] font-medium ${extraCss}`}
+      className={`font-medium text-[2.25rem] lg:text-[2.75rem] xl:text-[3.5rem] 2xl:text-[4.75rem] leading-[1] ${extraCss}`}
     >
       {words.map((word, index) => (
         <a.span
@@ -31,7 +31,7 @@ const CommonHeader = ({ headerText, extraCss }) => {
           initial="hidden"
           animate={controls}
           variants={variants}
-          transition={{ duration: 0.25, delay: 0.25 + index * 0.02 }}
+          transition={{ duration: 0.25, delay: 0.25 + index * 0.05 }}
           style={{ display: "inline-block", }}
         >
           {word}&nbsp;

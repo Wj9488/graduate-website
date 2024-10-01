@@ -1,99 +1,93 @@
-import { useState } from "react";
-import { motion as a, AnimatePresence } from "framer-motion";
 import PageMetadata from "@/components/sitewide/PageMetadata";
 import Nav from "@/components/sitewide/Nav";
-import TopGradient from "@/components/sitewide/TopGradient";
-import BlogListItem from "@/components/specific/BlogListItem";
+import VariableSizeHeading from "@/components/sitewide/VariableSizeHeading";
+import BlogTile from "@/components/specific/BlogTile";
+import EndCta from "@/components/sitewide/EndCta";
+import Footer from "@/components/sitewide/Footer";
+
+import SampleImage from "@/public/images/about__page_main_image.webp";
+import ExcodeImage from "@/public/images/blogImages/excode.webp";
+import CharlieMunger from "@/public/images/blogImages/charlie_munger.webp";
+import GDPR from "@/public/images/blogImages/gdpr.png";
+import FractionalReserve from "@/public/images/blogImages/fraction-reserve-banking.webp";
 
 const Blog = () => {
-  const [hoveredPost, setHoveredPost] = useState(null);
-
-  const defaultStyles = {
-    color: "#fefefe",
-  };
-
-  const hoveredStyles = hoveredPost
-    ? {
-        backgroundImage: `linear-gradient(-45deg, ${hoveredPost.gradientFrom}, ${hoveredPost.gradientTo})`,
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }
-    : defaultStyles;
-
-  const blogPosts = [
-    {
-      postNumber: "01",
-      postTitle: "Teaching at Excode 2023",
-      postHref: "excode-2023",
-      gradientFrom: "#bebebe",
-      gradientTo: "#070707",
-    },
-  ];
-
-  const textAnimation = {
-    hidden: { y: 10, opacity: 0, filter: "blur(15px)" },
-    visible: { y: 0, opacity: 1, filter: "blur(0px)" },
-  };
+  const Learning = "Learning";
+  const Perspective = "Perspective";
 
   return (
     <>
       <PageMetadata PageTitle={"Blog"} />
       <main className="overflow-x-hidden">
-        {/* <TopGradient
-          gradientFromLeft={'from-[#070707]'}
-          gradientToRight={'to-[#b1b1b1]'}
-        /> */}
-        <Nav />
-        <section className="pt-[6rem] lg:pt-[8rem] 2xl:pt-[15rem] 3xl:pt-[17.5rem] standard__x_padding">
-          <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl  text__c_reduced_black">Posts</p>
-          <ul className="">
-            {blogPosts.map((post, index) => (
-              <a.div
-                key={post.postNumber}
-                initial="hidden"
-                animate="visible"
-                variants={textAnimation}
-                transition={{ duration: 0.25, delay: 0.25 + index * 0.05 }}
-              >
-                <BlogListItem
-                  postNumber={post.postNumber}
-                  postTitle={post.postTitle}
-                  postHref={post.postHref}
-                  gradientFrom={post.gradientFrom}
-                  gradientTo={post.gradientTo}
-                  setHoveredPost={setHoveredPost}
-                />
-              </a.div>
-            ))}
-          </ul>
+        <Nav NavPageIdentifierColour={"text__c_reduced_black"} />
+        <header className="standard__x_padding_inner p-section-t">
+          <VariableSizeHeading
+            fontSize={
+              "text-[3rem] lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[6rem] pxs-t"
+            }
+            text={"All Posts"}
+          />
+        </header>
+        <section className="pm-y standard__x_padding_inner">
+          <div className="flex items-center gap-4">
+            <p className="text-[1.35rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[1.75rem] leading-[1.1]">
+              Perspectives
+              <span className="text__c_reduced_black">{" (1)"}</span>
+            </p>
+            <p className="text-[1.35rem] lg:text-[1.5rem] xl:text-[1.5rem] 2xl:text-[1.75rem] leading-[1.1]">
+              Learnings<span className="text__c_reduced_black">{" (2)"}</span>
+            </p>
+          </div>
         </section>
-        <AnimatePresence>
-          {hoveredPost ? (
-            <a.p
-              key={hoveredPost.postNumber}
-              className="fixed bottom-2 right-[0.5rem] lg:right-[0.75rem] blur-lg text-[10rem] lg:text-[15rem] xl:text-[20rem] 2xl:text-[25rem] 3xl:text-[30rem] leading-[.8] overflow-y-hidden"
-              style={hoveredStyles}
-              initial={{ opacity: 0, filter: "blur(50px)" }}
-              animate={{ opacity: 1, filter: "blur(15px)" }}
-              exit={{ opacity: 0, filter: "blur(50px)" }}
-              transition={{ duration: 0.5 }}
-            >
-              {hoveredPost.postNumber}
-            </a.p>
-          ) : (
-            <a.p
-              key="00"
-              className="fixed bottom-2 right-[0.5rem] lg:right-[0.75rem] blur-lg text-[10rem] lg:text-[15rem] xl:text-[20rem] 2xl:text-[25rem] 3xl:text-[30rem] leading-[.8] overflow-y-hidden"
-              style={defaultStyles}
-              initial={{ opacity: 0, filter: "blur(50px)" }}
-              animate={{ opacity: 1, filter: "blur(15px)" }}
-              exit={{ opacity: 0, filter: "blur(50px)" }}
-              transition={{ duration: 0.5 }}
-            >
-              00
-            </a.p>
-          )}
-        </AnimatePresence>
+        <section className="standard__x_padding_inner">
+          <div className="lg:grid grid-rows-1 grid-cols-3 gap-[1.25rem]">
+            <BlogTile
+              blogTitle={"A simple explanation of fractional reserve banking and its impacts."}
+              blogDate={"September 12, 2024"}
+              href={"/blog/a-simple-explanation-of-fractional-reserve-banking-and-its-impacts"}
+              alt={"An image of the bank of England"}
+              src={FractionalReserve}
+              blogType={Learning}
+            />
+            <BlogTile
+              blogTitle={
+                "Lessons from Charlie Munger, a summary of talk 11 'The Psychology of Human Misjudgement'."
+              }
+              blogDate={"June 21, 2024"}
+              href={"/blog/lessons-from-charlie-munger-a-summary-of-talk-11-the-psychology-of-human-misjudgement"}
+              alt={"An image of Charlie Munger"}
+              src={CharlieMunger}
+              blogType={Learning}
+            />
+            <BlogTile
+              blogTitle={"Teaching at Excode 2023."}
+              blogDate={"January 3, 2024"}
+              href={"/blog/excode-2023"}
+              alt={"An image of Excode 2023"}
+              src={ExcodeImage}
+              blogType={Perspective}
+            />
+            {/* <BlogTile
+              blogTitle={"With a great brand comes great power."}
+              blogDate={"June 21, 2024"}
+              href={"/blog/with-great-branding-comes-great-power"}
+              alt={"A large image"}
+              src={SampleImage}
+              blogType={Perspective}
+            /> */}
+            {/* <BlogTile 
+              blogTitle={"Teaching at Excode 2023"}
+              blogDate={"January 3, 2024"}
+              href={"/blog/teaching-at-excode-2023"}
+              alt={"Me teaching my ExCode group"}
+              src={ExcodeImage}
+              blogType={Learning}
+            /> */}
+          </div>
+        </section>
+
+        <EndCta />
+        <Footer />
       </main>
     </>
   );

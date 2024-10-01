@@ -1,12 +1,14 @@
 import PageMetadata from "@/components/sitewide/PageMetadata";
 import Nav from "@/components/sitewide/Nav";
-import TopGradient from "@/components/sitewide/TopGradient";
-import HeaderLayout from "@/components/sitewide/HeaderLayout";
+import VariableSizeHeading from "@/components/sitewide/VariableSizeHeading";
 import ProjectShowcase from "@/components/specific/ProjectShowcase";
+import WorkStatus from "@/components/specific/WorkStatus";
 
 import StrongWords from "@/public/images/strong__words_img.png";
 import BirdLime from "@/public/images/birdlime__img.png";
-import Excode from "@/public/images/excode__img.png";
+import Excode from "@/public/images/blogImages/excode.webp";
+import EndCta from "@/components/sitewide/EndCta";
+import Footer from "@/components/sitewide/Footer";
 
 const Work = () => {
   return (
@@ -14,30 +16,33 @@ const Work = () => {
       <PageMetadata PageTitle={"Work"} />
       <main className="overflow-x-hidden">
         {/* <TopGradient gradientFromLeft={"from-[#ff0f7b]"} gradientToRight={"to-[#f89b29]"}/> */}
-        <Nav />
-        <HeaderLayout
-          HeaderMainTitle={
-            "Selected Projects - From working in high end web design agencies to teaching in a coding bootcamp."
-          }
-          HeaderMediumText={"2022-2024"}
-          HeaderSecondarySmallText={"Projects"}
-          HeaderMediumTextGray={"Design, Dev, Work"}
-        />
-        <section className="py-[6rem] lg:py-[8rem] 2xl:py-[15rem] 3xl:py-[17.5rem]">
-          <div className="lg:flex justify-between gap-2">
-            <ProjectShowcase
-              imageSource={StrongWords}
-              projectLinkText={"Array"}
-              projectLink={"https://array.design"}
-              reducedOpacityText={"Design & Development"}
-              projectTitle={"Strong Words"}
-              extraLargeScreenWidth={"2xl:w-[1300px]"}
-              largeScreenWidth={"lg:w-[900px]"}
-              liveLink={"https://strong-words.co.uk"}
-              ButtonLiveLinkText={"View Live"}
-              target={"_blank"}
-            />
-            <div className="pt-[2.5rem] lg:pt-0">
+        <Nav NavPageIdentifierColour={"text__c_reduced_black"} />
+        <header className="standard__x_padding_inner p-section-t">
+          <WorkStatus />
+          <VariableSizeHeading
+            fontSize={
+              "text-[3rem] lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[6rem] pxs-t"
+            }
+            text={"My projects, professional and extra curricular"}
+          />
+        </header>
+        <section className="pl-t p-section-b standard__x_padding_inner">
+          <div className="">
+            <div className="w-[fit-content]">
+              <ProjectShowcase
+                imageSource={StrongWords}
+                projectLinkText={"Array"}
+                projectLink={"https://array.design"}
+                reducedOpacityText={"Design & Development"}
+                projectTitle={"Strong Words"}
+                extraLargeScreenWidth={"2xl:w-[1300px]"}
+                largeScreenWidth={"lg:w-[900px]"}
+                liveLink={"https://strong-words.co.uk"}
+                ButtonLiveLinkText={"View Live"}
+                target={"_blank"}
+              />
+            </div>
+            <div className="lg:ml-[45%] xl:ml-[50%] 2xl:ml-[60%] pm-y w-[fit-content]">
               <ProjectShowcase
                 imageSource={Excode}
                 projectLinkText={"Exeter Entrepreneurs Society"}
@@ -52,7 +57,7 @@ const Work = () => {
               />
             </div>
           </div>
-          <div className="pt-[2.5rem] lg:ml-0 w-[fit-content]">
+          <div className="w-[fit-content]">
             <ProjectShowcase
               imageSource={BirdLime}
               projectLinkText={"Thousand Lines"}
@@ -67,6 +72,8 @@ const Work = () => {
             />
           </div>
         </section>
+        <EndCta />
+        <Footer />
       </main>
     </>
   );

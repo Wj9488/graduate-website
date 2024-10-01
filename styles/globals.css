@@ -7,18 +7,19 @@
   --standard-text-opacity-reduced-black: #15151554;
   --standard-text-contrast: #fafafa;
   --standard-text-contrast-reduced-opacity: #515151;
-  --standard-text-contrast-reduced-opacity-drk: #808080;
+  --standard-text-contrast-reduced-opacity-drk: #6c6c6c;
 
   --body-background: #f5f3f4;
 
-  --colour-theme-accent-main: #2a2a2a;
+  --colour-theme-accent-main: #121420;
 
-  --padding-y-large: 5rem; 
+  
+  --padding-section-seperator: 10rem;
+  --padding-large: 5rem;
+  --padding-medium: 2.5rem;
+  --padding-small: 1.25rem;
+  --padding-xsm: .625rem;
 
-  --padding-b-medium: 2.5rem;
-  --padding-b-small: 1.25rem;
-  --padding-t-medium: 2.5rem;
-  --padding-t-small: 1.25rem;
 }
 
 body {
@@ -29,30 +30,45 @@ body {
 }
 main {
   min-height: 100dvh;
+} 
+input {
+  outline: none;
 }
 
+.times {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
 /* HEADING GRID */
 
-.header__grid {
+
+.module__grid {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Header Header Header SmallText MediumText";
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "Name Name Grade Grade Year Year Search";
 }
 
-#HeaderText {
-  grid-area: "Header";
+#name {
+  grid-area: "Name";
 }
-#SmallText {
-  grid-area: "SmallText";
+#grade {
+  grid-area: "Grade";
 }
-#MediumText {
-  grid-area: "MediumText";
+#year {
+  grid-area: "Year";
+}
+#search {
+  grid-area: "Search";
 }
 
 @media screen and (max-width: 800px) {
-  .header__grid {
-    display: block;
+  .module__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "Name Name Name Grade Year";
+    gap: var(--padding-small);
   }
 }
 
@@ -61,19 +77,6 @@ main {
 .text__m_body {
   font-size: 35px;
   line-height: 40px;
-}
-
-/* GRADIENTS */
-
-.gt {
-  background: linear-gradient(-45deg, #a7ab2f, #095edd);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.g__bg {
-  background: linear-gradient(-45deg, #FF0F7B, #F89B29);
 }
 
 /* COLOUR SETS TEXT */
@@ -86,6 +89,7 @@ h5,
 h6, 
 p {
   color: var(--standard-text-black);
+  /* letter-spacing: -.5px; */
 }
 
 /* Classes for writing */
@@ -115,38 +119,31 @@ p {
   background-color: var(--colour-theme-accent-main);
 }
 .accent__c_black {
-  background-color: var(--standard-text-black);
+  background-color: var(--colour-theme-accent-main);
 }
 .accent__c_white {
   background-color: var(--body-background);
 }
 
+.bg-gif {
+  background-image: url(../public/videos/home__page_background_gif.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* PADDING */
-
-.p__y_lg {
-  padding-bottom: var(--padding-y-large);
-  padding-top: var(--padding-y-large);
-}
-
-.p__b_md {
-  padding-bottom: var(--padding-b-medium);
-}
-.p__b_sm {
-  padding-bottom: var(--padding-b-small);
-}
-
-.p__t_md {
-  padding-bottom: var(--padding-t-medium);
-}
-.p__t_sm {
-  padding-bottom: var(--padding-t-small);
-}
 
 /* Standard X Padding */
 
 .standard__x_padding {
   padding-left: 1.75rem;
   padding-right: 1.75rem;  
+}
+
+.standard__x_padding_inner {
+  padding-left: 12rem;
+  padding-right: 12rem;
 }
 
 /* BORDERS */
@@ -172,23 +169,211 @@ p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;  
   }
+  .standard__x_padding_inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .pxs-t {
+    padding-top: .625rem;
+  }
+  .pxs-b {
+    padding-bottom: .625rem;
+  }
+  .pxs-y {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+  
+  .ps-t {
+    padding-top: 1.25rem;
+  }
+  .ps-b {
+    padding-bottom: 1.25rem;
+  }
+  .ps-y {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  .pm-t {
+    padding-top: 2.5rem;
+  }
+  .pm-b {
+    padding-bottom: 2.5rem;
+  }
+  .pm-y {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .pl-t {
+    padding-top: 5rem;
+  }
+  .pl-b {
+    padding-bottom: 5rem;
+  }
+  .pl-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .p-section-t {
+    padding-top: 10rem;
+  }
+  .p-section-b {
+    padding-bottom: 10rem;
+  }
+  .p-section-y {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+  .module__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "Name Grade Year Search";
+    gap: var(--padding-small);
+  }
+}
+
 /* lg */
 @media screen and (min-width: 1023px) {
   .standard__x_padding {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
   }
+  .standard__x_padding_inner {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .pxs-t {
+    padding-top: 1.25rem;
+  }
+  .pxs-b {
+    padding-bottom: 1.25rem;
+  }
+  .pxs-y {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  .ps-t {
+    padding-top: 2.5rem;
+  }
+  .ps-b {
+    padding-bottom: 2.5rem;
+  }
+  .ps-y {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .pm-t {
+    padding-top: 5rem;
+  }
+  .pm-b {
+    padding-bottom: 5rem;
+  }
+  .pm-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .pl-t {
+    padding-top: 10rem;
+  }
+  .pl-b {
+    padding-bottom: 10rem;
+  }
+  .pl-y {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  
+  .p-section-t {
+    padding-top: 10rem;
+  }
+  .p-section-b {
+    padding-bottom: 10rem;
+  }
+  .p-section-y {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }  
 }
 /* xl */
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1280px) {
   .standard__x_padding {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
   }
+  .standard__x_padding_inner {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+  .pxs-t {
+    padding-top: 1.25rem;
+  }
+  .pxs-b {
+    padding-bottom: 1.25rem;
+  }
+  .pxs-y {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  .ps-t {
+    padding-top: 2.5rem;
+  }
+  .ps-b {
+    padding-bottom: 2.5rem;
+  }
+  .ps-y {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .pm-t {
+    padding-top: 5rem;
+  }
+  .pm-b {
+    padding-bottom: 5rem;
+  }
+  .pm-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .pl-t {
+    padding-top: 10rem;
+  }
+  .pl-b {
+    padding-bottom: 10rem;
+  }
+  .pl-y {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  
+  .p-section-t {
+    padding-top: 20rem;
+  }
+  .p-section-b {
+    padding-bottom: 20rem;
+  }
+  .p-section-y {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+  
 }
 
-
+.reset__line_height{
+  line-height: 1;
+}
 
 /* MISC */
 
@@ -202,9 +387,8 @@ p {
   padding-right: 10px;
 }
 
-/* Hover animation */
+/* Hover animation 
 .hover__link {
-  /* display: inline-block; */
   position: relative;
   width: min-content;
 }
@@ -230,12 +414,12 @@ p {
   width: 0;
   border-radius: 40px;
   transition: width 0.5s ease;
-  background-color: var(--body-background);
+  background-color: var(--colour-theme-accent-main);
   mix-blend-mode: difference;
 }
 .hover__link:hover:before {
   width: 100%;
-  background-color: var(--body-background);
+  background-color: var(--colour-theme-accent-main);
   mix-blend-mode: difference;
   border-radius: 40px;
   transition: width 0.5s ease;
@@ -246,10 +430,12 @@ p {
   border-radius: 40px;
   transition: all 0s ease;
 }
+
+*/
+  
 /* Hover animation END */
 /* Hover animation */
-.hover__link_b {
-  /* display: inline-block; */
+/* .hover__link_b {
   position: relative;
   width: min-content;
 }
@@ -275,11 +461,13 @@ p {
   width: 0;
   border-radius: 40px;
   transition: width 0.5s ease;
-  background-color: var(--colour-theme-accent-main);
+  background-color: var(--body-background);
+  mix-blend-mode: difference;
 }
 .hover__link_b:hover:before {
   width: 100%;
-  background-color: var(--colour-theme-accent-main);
+  background-color: var(--body-background);
+  mix-blend-mode: difference;
   border-radius: 40px;
   transition: width 0.5s ease;
 }
@@ -288,5 +476,5 @@ p {
   background: transparent;
   border-radius: 40px;
   transition: all 0s ease;
-}
+} */
 /* Hover animation END */

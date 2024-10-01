@@ -1,5 +1,4 @@
-// components/Clock.js
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const GMTClock = () => {
   const [time, setTime] = useState('');
@@ -9,7 +8,7 @@ const GMTClock = () => {
       const current = new Date();
       let hours = current.getHours();
       const minutes = current.getMinutes();
-      const ampm = hours >= 12 ? 'pm' : 'pm';
+      const ampm = hours >= 12 ? 'pm' : 'am';
       hours = hours % 12;
       hours = hours ? hours : 12; 
       const minutesStr = minutes < 10 ? `0${minutes}` : minutes;
@@ -17,14 +16,22 @@ const GMTClock = () => {
       setTime(timeString);
     };
 
-    updateClock(); 
-    const intervalId = setInterval(updateClock, 60000); 
+    updateClock(); // Initial update
 
-    return () => clearInterval(intervalId); 
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const delay = 60000 - (now.getSeconds() * 1000 + now.getMilliseconds());
+      setTimeout(() => {
+        updateClock();
+        setInterval(updateClock, 60000);
+      }, delay);
+    }, 60000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <span className='text__c_contrast'>{time}</span>
+    <span className=''>{time}</span>
   );
 };
 
