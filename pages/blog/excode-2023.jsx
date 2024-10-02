@@ -23,7 +23,7 @@ const Excode2023Post = () => {
         desktopImageSrc={Excode2023}
         mobileImageSrc={Excode2023}
         animatedTopText={
-          "I really jumped in the deep end with this experience. I'd never taught a className before, let alone taught anyone Python. I'm glad to say that 100% of my class passed the final assessment. Here's what I learned:"
+          "I really jumped in the deep end with this experience. I'd never taught a class before, let alone taught anyone Python but I'm glad to say that 100% of my class passed the final assessment. Here's what I learned:"
         }
       >
             <h2 className="lg:text-lg xl:text-xl underline font-medium mb-4">
@@ -40,9 +40,9 @@ const Excode2023Post = () => {
               </p>
 
               <p className="mb-4">
-                I had the privilege of teaching a className of 26 students during
+                I had the privilege of teaching a class of 26 students during
                 this programme. Over the course of the 8 weeks, I guided my
-                className from having no prior knowledge of Python to gaining a
+                class from having no prior knowledge of Python to gaining a
                 solid grasp of the basics. I'm proud to say that all of my
                 students passed the final assessment, achieving a 100% pass
                 rate.
@@ -55,7 +55,7 @@ const Excode2023Post = () => {
               <p className="mb-4">
                 Structuring my lessons to best support my students was a key
                 focus. The curriculum was carefully designed to gradually build their skills, incorporating hands-on coding challenges and interactive
-                sessions. As a workshop leader I had to make sure my className got through and understood all the exercises for that week. Additionally, I provided one-on-one support where
+                sessions. As a workshop leader I had to make sure my class got through and understood all the exercises for that week. Additionally, I provided one-on-one support where
                 necessary to ensure no student was left behind. This approach
                 not only helped them grasp complex concepts but also encouraged
                 them to apply their knowledge practically.

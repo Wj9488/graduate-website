@@ -132,7 +132,7 @@ const CharlieMungerPost = () => {
 
         <p className="mb-4">
           Most individuals value fairness and will often act in ways that are
-          perceived as just, even at personal cost. For example splitting
+          perceived as just, even at personal cost. For example
           lining up so the first to come are the first to be served 
           or allowing someone to merge in front of you on the motorway. This can sometimes
           lead to inefficient or suboptimal decisions.
@@ -375,7 +375,7 @@ const CharlieMungerPost = () => {
         <p className="mb-4">
           People are more likely to follow or be influenced by those in positions of authority, even when the 
           authority figure is wrong. Stanley Milgram's experiments demonstrated this effectively where 65% of participants, led by a perceived authority figure, 
-          gave lethal shocks to other study participants because they were told to. 
+          gave lethal shocks to what they thought were other study participants simply because they were told to. 
         </p>
 
         <p className="text-2xl lg:text-3xl xl:text-4xl times mb-8">

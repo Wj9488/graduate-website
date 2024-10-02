@@ -78,7 +78,7 @@ const About = () => {
               "lg:w-[50%] xl:w-[32.5%] 2xl:w-[25%]"
             }
           />
-          <p className="lg:ml-[50%] lg:w-[30%] 2xl:w-[25%] 2xl:text-lg pm-t ">
+          <p className="lg:ml-[50%] lg:w-[40%] 2xl:w-[25%] 2xl:text-lg pm-t ">
           Bilingual in French and English, I bring a diverse skill set and a
             dynamic approach to every endeavour combining my technical skills
             and knowledge gained in my degree.
@@ -101,7 +101,7 @@ const About = () => {
         </section>
 
         <section className="pl-t standard__x_padding_inner">
-          <div className="flex items-start justify-between">
+          <div className="flex items-start justify-between gap-2">
           <Image
                 src={AboutPageImage}
                 width={"auto"}

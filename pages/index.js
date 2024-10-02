@@ -55,7 +55,7 @@ export default function Home() {
             </p> */}
             <CommonHeader
               headerText={
-                "First Class Business Graduate - Dual English / French National"
+                "First Class Business Graduate - Dual English / French national"
               }
               extraCss={"text-[#fafafa] w-[100%] lg:w-[45%] xl:w-[50%] 2xl:w-[40%]"}
             />

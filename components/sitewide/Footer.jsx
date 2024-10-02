@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-between lg:min-h-[83dvh] xl:min-h-[84dvh] 2xl:min-h-[85dvh] min-h-[82dvh]">
+        <div className="flex items-center justify-between lg:min-h-[78dvh] xl:min-h-[84dvh] 2xl:min-h-[85dvh] min-h-[82dvh]">
           <div className="lg:flex items-start justify-between w-full">
             <div className="">
               <p className="text__c_contrast_reduced_opacity_drk 2xl:text-lg pxs-b">

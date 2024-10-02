@@ -10,9 +10,10 @@ const PageMetadata = ({ PageTitle }) => {
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="William Jones" />
-    <meta property="og:description" content="Find out more about me." />
-    <meta name="description" content="Find out more about me." />
-    <meta property="og:image" content="./icon.png" />
+    <meta property="og:description" content="My personal website - find out more about me." />
+    <meta name="description" content="My personal website - find out more about me." />
+    <meta property="og:image" content="og-image-default.png" />
+    <meta property="og:title" content={`${PageTitle} | William Jones`}/>
     <meta name="keywords" content="" />
   </Head>
   )
