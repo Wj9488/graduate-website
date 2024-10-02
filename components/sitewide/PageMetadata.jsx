@@ -10,12 +10,12 @@ const PageMetadata = ({ PageTitle }) => {
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="William Jones" />
-    <meta property="og:description" content="I'm a recent business management graduate from Exeter University holding a First Class degree in Business Management.
+    <meta property="og:description" content="I'm a recent Business Management graduate from Exeter University holding a First Class degree in Business Management.
     I'm a bilingual English / French national. Tap the link to find out more about me. " />
-    <meta name="description" content="I'm a recent business management graduate from Exeter University holding a First Class degree in Business Management.
+    <meta name="description" content="I'm a recent Business Management graduate from Exeter University holding a First Class degree in Business Management.
     I'm a bilingual English / French national. Tap the link to find out more about me. 
     " />
-    <meta property="og:image" content="/og-image-default.png" />
+    <meta property="og:image" content="/og-image-default.webp" />
     <meta property="og:title" content={`${PageTitle} | William Jones`}/>
     <meta name="keywords" content="" />
   </Head>
