@@ -18,6 +18,7 @@ const PageMetadata = ({ PageTitle }) => {
     <meta property="og:image" content="/og-image-default.webp" />
     <meta property="og:title" content={`${PageTitle} | William Jones`}/>
     <meta name="keywords" content="" />
+    <meta name="google-site-verification" content="mClr6asdHIAydRru8hYvdGTTAI50DaryuO3MtRtucNU" />
   </Head>
   )
 }
