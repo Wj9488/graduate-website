@@ -141,7 +141,7 @@ export default function Home() {
               alt="London skyline at night"
               width={3000}
               height={1000}
-              className="lg:w-auto lg:h-[100vh] scale-[6] lg:scale-[1.6] lg:block hidden"
+              className="lg:w-auto lg:h-[100vh] scale-[6] lg:scale-[1.6] xl:scale-[2] lg:block hidden"
             />
           </div>
           <div>
