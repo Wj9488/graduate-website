@@ -254,7 +254,7 @@ const Contact = () => {
       <div className="">
         <button
           type="submit"
-          className="flex gap-1 items-center accent__c_black hover:opacity-50 transition-all duration-200 text__c_contrast py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="flex gap-1 items-center bg-gray-900 hover:opacity-50 transition-all duration-200 text__c_contrast py-3 px-5 rounded focus:outline-none focus:shadow-outline"
         >
           Send Message
           <div>

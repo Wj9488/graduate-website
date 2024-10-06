@@ -82,8 +82,8 @@ const Nav = ({ NavPageWordColour, NavPageIdentifierColour, NavTextColour}) => {
             className=""
             href={"/contact"}
           >
-            <div className="hover:opacity-75 transition-all duration-200">
-              <li className="3xl:text-lg underline font-medium">Contact Me</li>
+            <div className="hover:opacity-75 transition-all duration-200 px-4 py-2 button__text_colour shadow accent__c_main rounded">
+              <li className="2xl:text-base text-sm">Contact Me</li>
             </div>
           </Link>
         </ul>

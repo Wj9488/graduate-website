@@ -11,7 +11,7 @@
 
   --body-background: #f5f3f4;
 
-  --colour-theme-accent-main: #121420;
+  --colour-theme-accent-main: #e9ff70;
 
   
   --padding-section-seperator: 10rem;
@@ -93,7 +93,12 @@ p {
 
 /* Classes for writing */
 
-
+.button__text_colour {
+  color: #343434;
+}
+.button__colour {
+  color: var(--colour-theme-accent-main);
+}
 
 /* End of classes for writing */
 
@@ -148,10 +153,10 @@ p {
 /* BORDERS */
 
 .border__left {
-  border-left: 1px solid var(--colour-theme-accent-main);
+  border-left: 1px solid #070707;
 }
 .border__right {
-  border-right: 1px solid var(--colour-theme-accent-main);
+  border-right: 1px solid #070707;
 }
 
 .bt {
