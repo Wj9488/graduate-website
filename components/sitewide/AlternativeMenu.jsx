@@ -254,7 +254,7 @@ const AlternativeMenu = () => {
               {menuItems.map((item, index) => (
                 <a.li
                   key={item.name}
-                  className="text-[4rem] xl:text-6xl 2xl:text-[12rem]"
+                  className="text-[4.5rem] lg:text-[5rem] xl:text-[6rem] leading-[1] 2xl:text-[12rem]"
                   variants={{
                     initial: { opacity: 0, filter: "blur(10px)", y: 10 },
                     enter: {
