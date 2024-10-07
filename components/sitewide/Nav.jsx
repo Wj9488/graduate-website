@@ -27,8 +27,8 @@ const Nav = ({ NavPageWordColour, NavPageIdentifierColour, NavTextColour}) => {
 
   return (
     <nav className={`${NavTextColour} lg:min-h-[5dvh] 2xl:min-h-[2.5dvh] flex items-center justify-between transition-colors duration-1000 ease-in-out z-[10] lg:px-[1.75rem] 2xl:px-[2.25rem] px-[0.5rem]`}> 
-      <div className="z-10">
-        <Link className="flex items-center" href={"/"}>
+      <div className="z-[999]">
+        <Link className="flex items-center mix-blend-difference" href={"/"}>
           <span className="py-2 2xl:text-lg font-medium" aria-label="Click here to go back to the home page">William Jones</span>   
         </Link>
       </div>
@@ -56,7 +56,7 @@ const Nav = ({ NavPageWordColour, NavPageIdentifierColour, NavTextColour}) => {
           </li>
           <li className="3xl:text-lg">
             <Link
-              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b hover__menu_item"
               href={"/about"}
             >
               About
