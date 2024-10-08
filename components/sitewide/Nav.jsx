@@ -56,7 +56,7 @@ const Nav = ({ NavPageWordColour, NavPageIdentifierColour, NavTextColour}) => {
           </li>
           <li className="3xl:text-lg">
             <Link
-              className="pc hover:opacity-75 transition-all duration-200 hover__link_b hover__menu_item"
+              className="pc hover:opacity-75 transition-all duration-200 hover__link_b"
               href={"/about"}
             >
               About

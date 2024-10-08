@@ -17,7 +17,7 @@ const buttonVariants = {
 const menuVariants = {
   closed: {
     y: "-100%",
-    transition: { duration: 0.5, ease: [0.85, 0, 0.15, 1] },
+    transition: { duration: 0.25, ease: [0.85, 0, 0.15, 1] },
   },
   open: {
     y: 0,
@@ -249,7 +249,7 @@ const AlternativeMenu = () => {
             animate="open"
             exit="closed"
           >
-            <div className="w-[100vw] h-[100dvh] flex items-center justify-start ">
+            <div className="w-[100vw] h-[100dvh] flex items-center justify-between">
             <a.ul className="pm-t standard__x_padding_inner">
               {menuItems.map((item, index) => (
                 <a.li
@@ -277,6 +277,9 @@ const AlternativeMenu = () => {
                 </a.li>
               ))}
             </a.ul>
+            <div>
+              
+            </div>
             </div>
           </a.div>
         )}
