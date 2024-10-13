@@ -167,7 +167,7 @@ const AlternativeMenu = () => {
               </Link>
             </a.div>
             <a.button
-              className="hover:cursor-pointer hidden lg:block fixed top-5 right-[7.25rem] z-[999] shadow"
+              className="hover:cursor-pointer hidden lg:block fixed top-5 right-[7.25rem] z-[999] shadow rounded-lg"
               initial="initial"
               animate="visible"
               exit="initial"
@@ -184,7 +184,7 @@ const AlternativeMenu = () => {
             </a.button>
 
             <a.button
-              className=" hidden lg:block fixed top-5 right-[0.75rem] z-[999] shadow"
+              className=" hidden lg:block fixed top-5 right-[0.75rem] z-[999] shadow rounded-lg"
               initial="initial"
               animate="visible"
               exit="initial"
@@ -270,7 +270,7 @@ const AlternativeMenu = () => {
                   <Link
                     onClick={toggleMenu}
                     href={item.path}
-                    className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#e9ff70]"
+                    className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#e9ff70] "
                   >
                     {item.name}
                   </Link>
