@@ -270,7 +270,7 @@ const AlternativeMenu = () => {
                   <Link
                     onClick={toggleMenu}
                     href={item.path}
-                    className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#e9ff70] "
+                    className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#e9ff70]"
                   >
                     {item.name}
                   </Link>

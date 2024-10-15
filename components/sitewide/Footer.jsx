@@ -6,7 +6,7 @@ import VariableSizeHeading from "./VariableSizeHeading";
 const Footer = () => {
   return (
     <footer
-      className="relative h-[65dvh] lg:h-[85dvh] xl:h-[95dvh] 2xl:h-[70dvh] z-[99]"
+      className="relative h-[65dvh] lg:h-[85dvh] xl:h-[85dvh] 2xl:h-[70dvh] z-[99]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       {/* <div className="standard__x_padding_inner fixed bottom-0 h-[100dvh] w-full bg-gray-300 standard__x_padding">
@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div> */}
 
-      <div className="fixed bottom-0 h-[65dvh] lg:h-[85dvh] xl:h-[95dvh] 2xl:h-[70dvh] w-full bg-gray-300 standard__x_padding">
+      <div className="fixed bottom-0 h-[65dvh] lg:h-[85dvh] xl:h-[85dvh] 2xl:h-[70dvh] w-full bg-gray-300 standard__x_padding">
         <div className="standard__x_padding pl-t lg:flex items-start justify-between">
           <div className="">
             <p className="font-medium text-2xl lg:text-3xl lg:pb-0 pb-[2.5rem]">

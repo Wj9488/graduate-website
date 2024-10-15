@@ -12,6 +12,7 @@
   --body-background: #f5f3f4;
 
   --colour-theme-accent-main: #e9ff70;
+  --button-text-col: #2a2a2a;
 
   
   --padding-section-seperator: 10rem;
@@ -94,7 +95,7 @@ p {
 /* Classes for writing */
 
 .button__text_colour {
-  color: #343434;
+  color: var(--button-text-col);
 }
 .button__colour {
   color: var(--colour-theme-accent-main);
@@ -352,25 +353,25 @@ p {
   }
   
   .pl-t {
-    padding-top: 10rem;
+    padding-top: 7.5rem;
   }
   .pl-b {
-    padding-bottom: 10rem;
+    padding-bottom: 7.5rem;
   }
   .pl-y {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
   
   .p-section-t {
-    padding-top: 20rem;
+    padding-top: 15rem;
   }
   .p-section-b {
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
   }
   .p-section-y {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
   }
 }
 /* Anything above 1480px */
@@ -382,6 +383,71 @@ p {
   .standard__x_padding_inner {
     padding-left: 8rem;
     padding-right: 8rem;
+  } 
+  .pxs-t {
+    padding-top: 1.25rem;
+  }
+  .pxs-b {
+    padding-bottom: 1.25rem;
+  }
+  .pxs-y {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  .ps-t {
+    padding-top: 2.5rem;
+  }
+  .ps-b {
+    padding-bottom: 2.5rem;
+  }
+  .ps-y {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .pm-t {
+    padding-top: 5rem;
+  }
+  .pm-b {
+    padding-bottom: 5rem;
+  }
+  .pm-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .pl-t {
+    padding-top: 7.5rem;
+  }
+  .pl-b {
+    padding-bottom: 7.5rem;
+  }
+  .pl-y {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+  
+  .p-section-t {
+    padding-top: 15rem;
+  }
+  .p-section-b {
+    padding-bottom: 15rem;
+  }
+  .p-section-y {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .standard__x_padding {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+  .standard__x_padding_inner {
+    padding-left: 12rem;
+    padding-right: 12rem;
   } 
   .pxs-t {
     padding-top: 1.25rem;
@@ -437,17 +503,6 @@ p {
     padding-top: 20rem;
     padding-bottom: 20rem;
   }
-}
-
-@media screen and (min-width: 1600px) {
-  .standard__x_padding {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-  .standard__x_padding_inner {
-    padding-left: 12rem;
-    padding-right: 12rem;
-  } 
 }
 
 
