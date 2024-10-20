@@ -13,7 +13,7 @@ const BlogPageWrapper = ({children, author, date, blogTitle, desktopImageSrc, mo
         <Nav NavPageIdentifierColour={"text__c_reduced_black"}/>
         <header className="p-section-t ps-b standard__x_padding_inner">
           <BlogInfoBar postAuthor={author} blogLabel={blogLabel} postDate={date}/>
-          <BlogHeading extraCss={"lg:w-[55%] xl:w-[45%]"} headerText={blogTitle}/>
+          <BlogHeading extraCss={"lg:w-[55%] xl:w-[55%] 2xl:w-[45%]"} headerText={blogTitle}/>
         </header>
         <section className="pm-t">
           <div className="min-w-full overflow-hidden bg-gray-200">

@@ -23,7 +23,7 @@ const CharlieMungerPost = () => {
         desktopImageSrc={Charlie}
         mobileImageSrc={Charlie}
         animatedTopText={
-          "I chose to write this post both for my own benefit and hopefully for the benefit of others. I wanted a complete and easily accessible list of the most common psychological failings in human beings. Thankfully Charlie Munger compiled a thorough list. Enjoy."
+          "I wrote this to create for myself a complete and easily accessible list of the most common psychological tendencies in humans. Thankfully Charlie Munger compiled a thorough list."
         }
       >
         <h2 className="lg:text-lg xl:text-xl underline font-medium mb-4">
