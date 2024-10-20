@@ -10,7 +10,7 @@ const EndCta = () => {
         />
         <div className="flex items-center justify-center pm-y">
             <Link href={"/contact"}>
-                <button className="shadow rounded button__text_colour py-3 px-5 accent__c_main hover:opacity-75 duration-200 transition-all flex gap-1 items-center 2xl:text-lg">Contact Me
+                <button className="font-medium shadow rounded button__text_colour py-3 px-5 accent__c_main hover:opacity-75 duration-200 transition-all flex gap-1 items-center 2xl:text-lg">Contact Me
                     <svg
                       className="w-[17px] h-[17px] 2xl:w-[18px] 2xl:h-[18px] fill-[#2a2a2a]"
                       viewBox="0 0 15 15"
