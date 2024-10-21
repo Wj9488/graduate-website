@@ -9,10 +9,10 @@
   --standard-text-contrast-reduced-opacity: #515151;
   --standard-text-contrast-reduced-opacity-drk: #656565;
 
-  --body-background: #f5f3f4;
+  --body-background: #efefef;
 
-  --colour-theme-accent-main: #d1d5db;
-  --button-text-col: #2a2a2a;
+  --colour-theme-accent-main: #2b2d42;
+  --button-text-col: #fefefe;
 
   
   --padding-section-seperator: 10rem;
@@ -93,6 +93,10 @@ p {
 }
 
 /* Classes for writing */
+
+.button__svg_fill {
+  fill: var(--button-text-col);
+}
 
 .button__text_colour {
   color: var(--button-text-col);

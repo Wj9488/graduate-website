@@ -61,7 +61,7 @@ const AlternativeMenu = () => {
     } else {
       document.body.style.overflow = ""; // Re-enable scrolling
     }
-  
+
     // Clean up when component unmounts
     return () => {
       document.body.style.overflow = "";
@@ -75,24 +75,40 @@ const AlternativeMenu = () => {
   return (
     <>
       <>
-      {isVisible && (
-        <a.div
-          className="fixed top-1 left-[0.75rem] z-[999] py-1 px-2 lg:hidden"
+        {isVisible && (
+          <a.div
+            className="fixed top-1 left-[0.75rem] z-[999] py-1 px-2 lg:hidden"
+            initial="initial"
+            animate="visible"
+            exit="initial"
+            variants={buttonVariants}
+            id="Mobile Only"
+          >
+            <Link href="/" className="text__c_black text-xl font-medium">
+              <div className="">
+                W<span className="times font-bold">J</span>
+              </div>
+            </Link>
+          </a.div>
+        )}
+        <a.button
+          className="hover:cursor-pointer lg:hidden fixed top-1 right-[6rem] z-[999] shadow rounded-lg"
           initial="initial"
           animate="visible"
           exit="initial"
           variants={buttonVariants}
-          id="Mobile Only"
+          id="DesktopOnly"
         >
-          <Link href="/" className="text__c_black text-xl font-medium">
-            <div className="">
-              W<span className="times font-bold">J</span>
+          <Link className="" href={"/contact"}>
+            <div className="hover:opacity-75 transition-all duration-200 py-1 px-2 accent__c_main rounded-lg">
+              <p className="button__text_colour">
+                Contact
+              </p>
             </div>
           </Link>
-        </a.div>
-        )}
+        </a.button>
         <a.button
-          className="hover:cursor-pointer lg:hidden fixed top-1 right-2 rounded-lg flex items-center justify-center z-[999]"
+          className="hover:cursor-pointer lg:hidden shadow fixed top-1 right-2 rounded-lg flex items-center justify-center z-[999]"
           onClick={toggleMenu}
           id="MobileOnly"
           initial="initial"
@@ -175,22 +191,10 @@ const AlternativeMenu = () => {
               id="DesktopOnly"
             >
               <Link className="" href={"/contact"}>
-                <div className="flex items-center gap-2 hover:opacity-75 transition-all duration-200 px-4 py-2 accent__c_main rounded-lg">
-                  <p className="2xl:text-base text-sm button__text_colour font-medium">
+                <div className="hover:opacity-75 transition-all duration-200 px-4 py-2 accent__c_main rounded-lg">
+                  <p className="2xl:text-base text-sm button__text_colour">
                     Contact Me
                   </p>
-                  <svg
-                      className="w-[17px] h-[17px] fill-[#2a2a2a]"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
                 </div>
               </Link>
             </a.button>
@@ -255,43 +259,41 @@ const AlternativeMenu = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <a.div
-            className="fixed top-0 flex flex-col justify-center right-0 bottom__left_radius xl:rounded-none h-full bg-gray-200 shadow-2xl z-[500]"
+            className="fixed top-0 flex flex-col justify-center right-0 bottom__left_radius xl:rounded-none h-full bg-gray-300 shadow-2xl z-[500]"
             variants={menuVariants}
             initial="closed"
             animate="open"
             exit="closed"
           >
             <div className="w-[100vw] h-[100dvh] flex items-center justify-between">
-            <a.ul className="pm-t standard__x_padding_inner">
-              {menuItems.map((item, index) => (
-                <a.li
-                  key={item.name}
-                  className="text-[4.5rem] lg:text-[5rem] xl:text-[6rem] leading-[1] 2xl:text-[12rem]"
-                  variants={{
-                    initial: { opacity: 0, filter: "blur(10px)", y: 10 },
-                    enter: {
-                      opacity: 1,
-                      filter: "blur(0px)",
-                      y: 0,
-                      transition: { duration: 0.5, delay: 0.5 + index * 0.1 },
-                    },
-                  }}
-                  initial="initial"
-                  animate="enter"
-                >
-                  <Link
-                    onClick={toggleMenu}
-                    href={item.path}
-                    className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#d1d5db]"
+              <a.ul className="pm-t standard__x_padding_inner">
+                {menuItems.map((item, index) => (
+                  <a.li
+                    key={item.name}
+                    className="text-[4.5rem] lg:text-[5rem] xl:text-[6rem] leading-[1] 2xl:text-[12rem]"
+                    variants={{
+                      initial: { opacity: 0, filter: "blur(10px)", y: 10 },
+                      enter: {
+                        opacity: 1,
+                        filter: "blur(0px)",
+                        y: 0,
+                        transition: { duration: 0.5, delay: 0.5 + index * 0.1 },
+                      },
+                    }}
+                    initial="initial"
+                    animate="enter"
                   >
-                    {item.name}
-                  </Link>
-                </a.li>
-              ))}
-            </a.ul>
-            <div>
-              
-            </div>
+                    <Link
+                      onClick={toggleMenu}
+                      href={item.path}
+                      className="transition-all duration-200 ease-in-out hover__menu_item text__c_black hover:bg-[#2b2d42] hover:text-[#fefefe]"
+                    >
+                      {item.name}
+                    </Link>
+                  </a.li>
+                ))}
+              </a.ul>
+              <div></div>
             </div>
           </a.div>
         )}
